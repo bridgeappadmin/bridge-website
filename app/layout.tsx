@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bridge | Influencer Marketplace",
+  title: "Bridge | Brand and Creator Campaigns",
   description:
-    "Bridge is an influencer marketplace connecting brands and creators through onboarding, campaign management, profile tools, and messaging.",
+    "Bridge is a premium influencer marketplace where brands and creators discover, launch, and collaborate on campaigns.",
 };
 
 export default function RootLayout({
