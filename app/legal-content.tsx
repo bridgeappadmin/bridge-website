@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 
-export const supportEmail = "bridgeappadmin@gmail.com";
+export const supportEmail = "tazmifyappadmin@gmail.com";
 export const lastUpdated = "May 14, 2026";
 
 type LegalSection = {
@@ -16,10 +16,10 @@ export const privacySections: LegalSection[] = [
     title: "Introduction",
     body: (
       <>
-        Bridge is a creator-brand marketplace platform that helps content creators
+        Tazmify is a creator-brand marketplace platform that helps content creators
         and businesses discover, connect, and collaborate on marketing campaigns.
         This Privacy Policy explains how we collect, use, store, and protect user
-        information when using Bridge and its related services. By using Bridge,
+        information when using Tazmify and its related services. By using Tazmify,
         you agree to the practices described in this Privacy Policy.
       </>
     ),
@@ -37,24 +37,24 @@ export const privacySections: LegalSection[] = [
       "Account information: name, email address, phone number, address, profile image, and account role such as Creator or Brand.",
       "Profile information: bio, niche or category information, social media links, brand details, creator details, portfolio content, and other information users choose to provide.",
       "Campaign and collaboration data: campaign creation details, applications, pitches, messages between users, uploaded files, and media.",
-      "Support and operational data: requests sent to Bridge support, device or usage information needed to secure and operate the platform, and notification preferences.",
+      "Support and operational data: requests sent to Tazmify support, device or usage information needed to secure and operate the platform, and notification preferences.",
     ],
   },
   {
     title: "Instagram Integration",
     body: (
       <>
-        Bridge allows creators to voluntarily connect their Instagram account using
+        Tazmify allows creators to voluntarily connect their Instagram account using
         Instagram&apos;s official OAuth authorization system. With user permission,
-        Bridge may access analytics data provided through the Instagram Graph API.
-        Bridge does not access or store Instagram passwords.
+        Tazmify may access analytics data provided through the Instagram Graph API.
+        Tazmify does not access or store Instagram passwords.
       </>
     ),
     items: [
       "Follower count, reach, impressions, profile visits, and media performance metrics.",
       "Instagram analytics may be used to help brands evaluate creator profiles, improve creator discovery, support campaign collaboration decisions, and provide analytics insights within the platform.",
       "Users may disconnect their Instagram account at any time through account settings.",
-      "When an Instagram account is disconnected or a deletion request is completed, Bridge removes connected Instagram tokens and deletes stored Instagram analytics data unless limited retention is required for legal or security purposes.",
+      "When an Instagram account is disconnected or a deletion request is completed, Tazmify removes connected Instagram tokens and deletes stored Instagram analytics data unless limited retention is required for legal or security purposes.",
     ],
   },
   {
@@ -72,13 +72,13 @@ export const privacySections: LegalSection[] = [
     title: "Data Sharing",
     body: (
       <>
-        Bridge does not sell personal information. Certain profile, campaign, and
-        analytics information may be visible to other Bridge users as part of the
+        Tazmify does not sell personal information. Certain profile, campaign, and
+        analytics information may be visible to other Tazmify users as part of the
         marketplace experience.
       </>
     ),
     items: [
-      "Bridge may use trusted service providers for cloud hosting, authentication, file storage, notifications, analytics, and infrastructure services.",
+      "Tazmify may use trusted service providers for cloud hosting, authentication, file storage, notifications, analytics, and infrastructure services.",
       "Information may be disclosed if required by law or when necessary to protect platform security, users, or legal rights.",
       "Creator profile and analytics information may be visible to brands where required for creator discovery and campaign collaboration.",
       "Brand profile and campaign information may be visible to creators where required for campaign discovery and applications.",
@@ -88,7 +88,7 @@ export const privacySections: LegalSection[] = [
     title: "Data Retention",
     body: (
       <>
-        Bridge retains user information for as long as needed to provide the
+        Tazmify retains user information for as long as needed to provide the
         platform, comply with legal obligations, resolve disputes, enforce
         agreements, maintain security, and support legitimate business operations.
         Users may request account deletion at any time as described below.
@@ -99,7 +99,7 @@ export const privacySections: LegalSection[] = [
     title: "Data Security",
     body: (
       <>
-        Bridge uses reasonable technical and organizational safeguards to protect
+        Tazmify uses reasonable technical and organizational safeguards to protect
         user information, including secure infrastructure, encrypted storage
         practices, and authenticated access controls. No online service can
         guarantee absolute security.
@@ -113,7 +113,7 @@ export const privacySections: LegalSection[] = [
         Users may request deletion of their account and associated data through
         platform settings or by contacting support. Instagram connections can also
         be disconnected at any time. Deletion requests can be sent to{" "}
-        <LegalEmail /> if a user cannot access the Bridge application.
+        <LegalEmail /> if a user cannot access the Tazmify application.
       </>
     ),
   },
@@ -121,10 +121,10 @@ export const privacySections: LegalSection[] = [
     title: "Third-Party Services",
     body: (
       <>
-        Bridge may integrate with third-party platforms and services including
+        Tazmify may integrate with third-party platforms and services including
         Instagram / Meta, Google Sign-In, and Apple Sign-In. Use of third-party
         services may also be subject to their respective privacy policies and
-        terms. Bridge is not responsible for the privacy practices of third-party
+        terms. Tazmify is not responsible for the privacy practices of third-party
         services.
       </>
     ),
@@ -135,7 +135,7 @@ export const privacySections: LegalSection[] = [
       <>
         We may update this Privacy Policy from time to time. Updated versions will
         be posted on this page with a revised Last Updated date. Continued use of
-        Bridge after updates constitutes acceptance of the revised policy.
+        Tazmify after updates constitutes acceptance of the revised policy.
       </>
     ),
   },
@@ -143,7 +143,7 @@ export const privacySections: LegalSection[] = [
     title: "Contact",
     body: (
       <>
-        For privacy-related questions or support requests, contact Bridge Support
+        For privacy-related questions or support requests, contact Tazmify Support
         at <LegalEmail />.
       </>
     ),
@@ -155,10 +155,10 @@ export const termsSections: LegalSection[] = [
     title: "Introduction",
     body: (
       <>
-        Welcome to Bridge. Bridge is a platform that connects content creators and
+        Welcome to Tazmify. Tazmify is a platform that connects content creators and
         brands for influencer marketing collaborations, campaign discovery,
         communication, and analytics-driven partnerships. By accessing or using
-        Bridge, you agree to these Terms & Conditions. If you do not agree, please
+        Tazmify, you agree to these Terms & Conditions. If you do not agree, please
         do not use the platform.
       </>
     ),
@@ -174,7 +174,7 @@ export const termsSections: LegalSection[] = [
     items: [
       "The information you provide must be accurate and current.",
       "You must be authorized to use any connected social accounts.",
-      "You agree to use Bridge lawfully and responsibly.",
+      "You agree to use Tazmify lawfully and responsibly.",
       "You are responsible for complying with all laws, platform policies, advertising rules, disclosure requirements, and contractual obligations that apply to your collaborations.",
     ],
   },
@@ -184,7 +184,7 @@ export const termsSections: LegalSection[] = [
       <>
         Users are responsible for maintaining the security of their account,
         keeping login credentials confidential, and all activity conducted through
-        their account. Bridge may suspend or terminate accounts involved in
+        their account. Tazmify may suspend or terminate accounts involved in
         unauthorized, abusive, fraudulent, or harmful activity.
       </>
     ),
@@ -193,25 +193,25 @@ export const termsSections: LegalSection[] = [
     title: "Platform Usage",
     body: (
       <>
-        Bridge provides tools that allow creators to showcase profiles and
+        Tazmify provides tools that allow creators to showcase profiles and
         analytics, brands to create campaigns and discover creators, and users to
         communicate and collaborate within the platform.
       </>
     ),
     items: [
-      "Bridge does not guarantee campaign success, partnership outcomes, financial results, engagement performance, or creator or brand authenticity beyond available platform information.",
+      "Tazmify does not guarantee campaign success, partnership outcomes, financial results, engagement performance, or creator or brand authenticity beyond available platform information.",
       "Users are responsible for independently evaluating collaborations, agreements, deliverables, payments, and legal obligations.",
-      "Bridge may update, improve, restrict, suspend, or discontinue features as needed to operate and protect the platform.",
+      "Tazmify may update, improve, restrict, suspend, or discontinue features as needed to operate and protect the platform.",
     ],
   },
   {
     title: "Instagram Integration",
     body: (
       <>
-        Bridge may allow creators to connect Instagram accounts through
+        Tazmify may allow creators to connect Instagram accounts through
         Instagram&apos;s official OAuth authorization system. By connecting
-        Instagram, users authorize Bridge to access permitted analytics and profile
-        data through the Instagram Graph API. Bridge is not affiliated with,
+        Instagram, users authorize Tazmify to access permitted analytics and profile
+        data through the Instagram Graph API. Tazmify is not affiliated with,
         endorsed by, or operated by Instagram or Meta. Users may disconnect
         Instagram integrations at any time through account settings.
       </>
@@ -233,9 +233,9 @@ export const termsSections: LegalSection[] = [
     title: "User Content",
     body: (
       <>
-        Users retain ownership of content they upload to Bridge, including profile
+        Users retain ownership of content they upload to Tazmify, including profile
         information, campaign content, media uploads, and messages. By uploading
-        content, users grant Bridge a limited right to store, display, and process
+        content, users grant Tazmify a limited right to store, display, and process
         such content solely for operating, securing, improving, and supporting
         platform functionality. Users are responsible for ensuring they have rights
         to the content they upload.
@@ -246,8 +246,8 @@ export const termsSections: LegalSection[] = [
     title: "Privacy",
     body: (
       <>
-        Use of Bridge is also governed by our{" "}
-        <Link href="/privacy-policy" className="font-semibold text-[var(--bridge-yellow)] transition hover:text-white">
+        Use of Tazmify is also governed by our{" "}
+        <Link href="/privacy-policy" className="font-semibold text-[var(--tazmify-yellow)] transition hover:text-white">
           Privacy Policy
         </Link>
         . By using the platform, users acknowledge and agree to the collection and
@@ -259,9 +259,9 @@ export const termsSections: LegalSection[] = [
     title: "Third-Party Services",
     body: (
       <>
-        Bridge may integrate with third-party services including Instagram / Meta,
+        Tazmify may integrate with third-party services including Instagram / Meta,
         Google Sign-In, and Apple Sign-In. Use of third-party services may also be
-        subject to those providers&apos; own terms and policies. Bridge is not
+        subject to those providers&apos; own terms and policies. Tazmify is not
         responsible for third-party services or platforms.
       </>
     ),
@@ -270,8 +270,8 @@ export const termsSections: LegalSection[] = [
     title: "Limitation of Liability",
     body: (
       <>
-        Bridge is provided on an as available basis. To the maximum extent
-        permitted by law, Bridge shall not be liable for indirect or consequential
+        Tazmify is provided on an as available basis. To the maximum extent
+        permitted by law, Tazmify shall not be liable for indirect or consequential
         damages, business losses, lost profits, collaboration disputes between
         users, platform interruptions, or data loss. Users use the platform at
         their own discretion and risk.
@@ -282,7 +282,7 @@ export const termsSections: LegalSection[] = [
     title: "Termination",
     body: (
       <>
-        Bridge may suspend or terminate access to the platform at any time if
+        Tazmify may suspend or terminate access to the platform at any time if
         users violate these Terms & Conditions or engage in harmful or unlawful
         activity. Users may stop using the platform or delete their account at any
         time.
@@ -293,9 +293,9 @@ export const termsSections: LegalSection[] = [
     title: "Changes to These Terms",
     body: (
       <>
-        Bridge may update these Terms & Conditions from time to time. Updated
+        Tazmify may update these Terms & Conditions from time to time. Updated
         versions will be posted on this page with a revised Last Updated date.
-        Continued use of Bridge after changes constitutes acceptance of the
+        Continued use of Tazmify after changes constitutes acceptance of the
         updated terms.
       </>
     ),
@@ -304,7 +304,7 @@ export const termsSections: LegalSection[] = [
     title: "Contact",
     body: (
       <>
-        For questions regarding these Terms & Conditions, contact Bridge Support
+        For questions regarding these Terms & Conditions, contact Tazmify Support
         at <LegalEmail />.
       </>
     ),
@@ -316,9 +316,9 @@ export const deletionSections: LegalSection[] = [
     title: "Account and Data Deletion",
     body: (
       <>
-        Users may request deletion of their Bridge account and associated data at
+        Users may request deletion of their Tazmify account and associated data at
         any time. This includes connected Instagram analytics data stored by
-        Bridge, subject to limited retention where required for legal, security,
+        Tazmify, subject to limited retention where required for legal, security,
         fraud-prevention, or compliance purposes.
       </>
     ),
@@ -326,7 +326,7 @@ export const deletionSections: LegalSection[] = [
   {
     title: "Delete Your Account In The App",
     items: [
-      "Open the Bridge application.",
+      "Open the Tazmify application.",
       "Navigate to Settings.",
       "Select Delete Account.",
       "Confirm the deletion request.",
@@ -338,7 +338,7 @@ export const deletionSections: LegalSection[] = [
       <>
         Users may disconnect their Instagram account at any time through account
         settings. Disconnecting Instagram removes the active Instagram connection
-        from Bridge and prevents Bridge from continuing to access Instagram data
+        from Tazmify and prevents Tazmify from continuing to access Instagram data
         through that connection.
       </>
     ),
@@ -348,8 +348,8 @@ export const deletionSections: LegalSection[] = [
     body: (
       <>
         If you are unable to access your account, request deletion by contacting
-        Bridge Support at <LegalEmail />. Include the email address associated
-        with your Bridge account so the request can be verified.
+        Tazmify Support at <LegalEmail />. Include the email address associated
+        with your Tazmify account so the request can be verified.
       </>
     ),
   },
@@ -366,8 +366,8 @@ export const deletionSections: LegalSection[] = [
     title: "Confirmation and Timing",
     body: (
       <>
-        Bridge will review and process verified deletion requests within a
-        reasonable period. If additional verification is needed, Bridge Support may
+        Tazmify will review and process verified deletion requests within a
+        reasonable period. If additional verification is needed, Tazmify Support may
         contact the requester using the account email or the email used to submit
         the request.
       </>
@@ -387,7 +387,7 @@ export function LegalPage({
   sections: LegalSection[];
 }) {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[var(--bridge-bg)] text-white">
+    <main className="relative min-h-screen overflow-hidden bg-[var(--tazmify-bg)] text-white">
       <div className="noise-layer" />
       <div className="ambient-light" />
       <div className="pointer-events-none absolute left-[-10rem] top-24 h-80 w-80 rounded-full bg-[rgba(242,100,34,0.18)] blur-3xl" />
@@ -398,7 +398,7 @@ export function LegalPage({
 
         <section className="grid gap-8 py-12 lg:grid-cols-[minmax(0,0.78fr)_minmax(280px,0.22fr)] lg:py-16">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--bridge-yellow)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--tazmify-yellow)]">
               {eyebrow}
             </p>
             <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.04em] text-white sm:text-6xl">
@@ -421,7 +421,7 @@ export function LegalPage({
           </div>
 
           <aside className="h-fit rounded-lg border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.2)] backdrop-blur-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--bridge-yellow)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--tazmify-yellow)]">
               Document status
             </p>
             <dl className="mt-4 grid gap-4 text-sm">
@@ -431,7 +431,7 @@ export function LegalPage({
               </div>
               <div>
                 <dt className="font-semibold text-white">Platform</dt>
-                <dd className="mt-1 text-white/54">Bridge creator-brand marketplace</dd>
+                <dd className="mt-1 text-white/54">Tazmify creator-brand marketplace</dd>
               </div>
               <div>
                 <dt className="font-semibold text-white">Support</dt>
@@ -450,7 +450,7 @@ export function LegalPage({
               className="rounded-lg border border-white/10 bg-white/[0.055] p-5 shadow-[0_20px_80px_rgba(0,0,0,0.22)] backdrop-blur-2xl sm:p-6"
             >
               <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-5">
-                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-[linear-gradient(135deg,var(--bridge-orange),var(--bridge-purple))] text-sm font-semibold text-white shadow-[0_0_36px_rgba(242,100,34,0.2)]">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-[linear-gradient(135deg,var(--tazmify-orange),var(--tazmify-purple))] text-sm font-semibold text-white shadow-[0_0_36px_rgba(242,100,34,0.2)]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <div className="min-w-0">
@@ -489,12 +489,12 @@ function LegalHeader() {
     <header className="sticky top-3 z-20 rounded-full border border-white/10 bg-[#070812]/76 px-4 py-3 shadow-[0_18px_60px_rgba(0,0,0,0.22)] backdrop-blur-2xl sm:px-5">
       <div className="flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3">
-          <BridgeMark className="h-9 w-auto" />
+          <TazmifyMark className="h-9 w-auto" />
           <div>
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[var(--bridge-yellow)]">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[var(--tazmify-yellow)]">
               Legal center
             </p>
-            <p className="text-sm font-semibold text-white">Bridge</p>
+            <p className="text-sm font-semibold text-white">Tazmify</p>
           </div>
         </Link>
 
@@ -525,18 +525,18 @@ function LegalEmail() {
   return (
     <a
       href={`mailto:${supportEmail}`}
-      className="font-semibold text-[var(--bridge-yellow)] transition hover:text-white"
+      className="font-semibold text-[var(--tazmify-yellow)] transition hover:text-white"
     >
       {supportEmail}
     </a>
   );
 }
 
-function BridgeMark({ className }: { className?: string }) {
+function TazmifyMark({ className }: { className?: string }) {
   return (
     <Image
-      src="/bridge-logo.svg"
-      alt="Bridge"
+      src="/tazmify-logo.svg"
+      alt="Tazmify"
       width={60}
       height={32}
       className={className}

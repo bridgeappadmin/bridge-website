@@ -3,12 +3,12 @@
 :root {
   --background: #070812;
   --foreground: #ffffff;
-  --bridge-bg: #070812;
-  --bridge-ink: #ffffff;
-  --bridge-muted: rgba(255, 255, 255, 0.58);
-  --bridge-orange: #f26422;
-  --bridge-yellow: #f5b21b;
-  --bridge-purple: #4b3fa3;
+  --tazmify-bg: #070812;
+  --tazmify-ink: #ffffff;
+  --tazmify-muted: rgba(255, 255, 255, 0.58);
+  --tazmify-orange: #f26422;
+  --tazmify-yellow: #f5b21b;
+  --tazmify-purple: #4b3fa3;
 }
 
 @theme inline {
@@ -24,7 +24,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--bridge-bg);
+  background: var(--tazmify-bg);
 }
 
 body {
@@ -94,7 +94,7 @@ button {
 .animated-button {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(100deg, var(--bridge-orange), var(--bridge-purple), var(--bridge-yellow), var(--bridge-orange));
+  background: linear-gradient(100deg, var(--tazmify-orange), var(--tazmify-purple), var(--tazmify-yellow), var(--tazmify-orange));
   background-size: 240% 240%;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.12),

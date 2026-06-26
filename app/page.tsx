@@ -78,7 +78,7 @@ const brandSteps = ["Launch Campaign", "Match with Creators", "Scale Reach"];
 
 const testimonials = [
   {
-    quote: "Bridge completely changed how we run influencer campaigns. It feels focused, fast, and built for the way creators actually work.",
+    quote: "Tazmify completely changed how we run influencer campaigns. It feels focused, fast, and built for the way creators actually work.",
     name: "Maya R.",
     role: "Lifestyle creator",
   },
@@ -113,7 +113,7 @@ export default function Home() {
   );
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[var(--bridge-bg)] text-white">
+    <main className="relative min-h-screen overflow-hidden bg-[var(--tazmify-bg)] text-white">
       <div className="noise-layer" />
       <div className="ambient-light" />
 
@@ -122,9 +122,9 @@ export default function Home() {
         className="fixed left-1/2 top-3 z-50 w-[calc(100%-1rem)] max-w-7xl -translate-x-1/2 border px-3 py-3 shadow-[0_16px_60px_rgba(0,0,0,0.22)] backdrop-blur-2xl sm:top-5 sm:w-[calc(100%-2rem)] sm:px-4"
       >
         <nav className="flex items-center justify-between gap-5">
-          <a href="#" className="flex items-center gap-3" aria-label="Bridge home">
-            <BridgeMark className="h-9 w-auto" />
-            <span className="text-base font-semibold">Bridge</span>
+          <a href="#" className="flex items-center gap-3" aria-label="Tazmify home">
+            <TazmifyMark className="h-9 w-auto" />
+            <span className="text-base font-semibold">Tazmify</span>
           </a>
 
           <div className="hidden items-center gap-7 text-sm text-white/62 lg:flex">
@@ -155,7 +155,7 @@ export default function Home() {
             className="relative z-10 max-w-3xl"
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-xs font-medium uppercase text-white/70 backdrop-blur-xl">
-              <Sparkles className="h-4 w-4 text-[var(--bridge-yellow)]" />
+              <Sparkles className="h-4 w-4 text-[var(--tazmify-yellow)]" />
               Built for the next generation creator economy.
             </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/64 sm:text-lg">
-              Bridge helps brands discover creators, launch campaigns, and collaborate seamlessly - all in one platform.
+              Tazmify helps brands discover creators, launch campaigns, and collaborate seamlessly - all in one platform.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -240,7 +240,7 @@ function HeroScene() {
           </div>
         </div>
         <div className="mt-4 h-2 rounded-full bg-white/10">
-          <div className="h-full w-[92%] rounded-full bg-[linear-gradient(90deg,var(--bridge-orange),var(--bridge-yellow))]" />
+          <div className="h-full w-[92%] rounded-full bg-[linear-gradient(90deg,var(--tazmify-orange),var(--tazmify-yellow))]" />
         </div>
         <p className="mt-3 text-xs text-white/48">92% campaign fit</p>
       </FloatingCard>
@@ -260,7 +260,7 @@ function HeroScene() {
           {[38, 64, 48, 78, 92, 70].map((height, index) => (
             <span
               key={index}
-              className="w-full rounded-t-sm bg-[linear-gradient(180deg,var(--bridge-purple),rgba(255,255,255,0.12))]"
+              className="w-full rounded-t-sm bg-[linear-gradient(180deg,var(--tazmify-purple),rgba(255,255,255,0.12))]"
               style={{ height }}
             />
           ))}
@@ -279,7 +279,7 @@ function HeroScene() {
         transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute right-12 top-[330px] z-40 flex items-center gap-2 rounded-full border border-white/12 bg-[#10111e]/80 px-4 py-3 text-sm text-white/82 shadow-[0_18px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl"
       >
-        <Bell className="h-4 w-4 text-[var(--bridge-yellow)]" />
+        <Bell className="h-4 w-4 text-[var(--tazmify-yellow)]" />
         Brand sent an offer
       </motion.div>
 
@@ -294,7 +294,7 @@ function PhoneMockup() {
       <div className="absolute left-1/2 top-3 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-black" />
       <div className="overflow-hidden rounded-[2rem] border border-white/8 bg-[linear-gradient(180deg,#17162a,#0b0c17)] px-4 pb-5 pt-9">
         <div className="flex items-center justify-between">
-          <BridgeMark className="h-8 w-auto" />
+          <TazmifyMark className="h-8 w-auto" />
           <span className="rounded-full bg-white/10 px-3 py-1 text-[10px] text-white/68">Live</span>
         </div>
         <p className="mt-6 text-2xl font-semibold">Campaigns that fit your world.</p>
@@ -345,18 +345,18 @@ function ProblemSolution() {
       <SectionIntro
         eyebrow="From friction to flow"
         title="The creator economy finally gets a collaboration layer."
-        copy="Bridge turns the messiest parts of influencer marketing into a guided, beautiful workflow for both sides."
+        copy="Tazmify turns the messiest parts of influencer marketing into a guided, beautiful workflow for both sides."
       />
       <div className="mt-10 grid gap-4 lg:grid-cols-3">
         {problemSolutions.map((item, index) => (
           <MotionSection key={item.title} delay={index * 0.08} className="glass-card group min-h-[320px] p-6 transition duration-300 hover:-translate-y-1 hover:border-white/18 hover:shadow-[0_0_70px_rgba(242,100,34,0.14)]">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/[0.07] text-[var(--bridge-yellow)]">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/[0.07] text-[var(--tazmify-yellow)]">
               <item.icon className="h-5 w-5" />
             </div>
             <h3 className="mt-6 text-2xl font-semibold">{item.title}</h3>
             <p className="mt-4 leading-7 text-white/54">{item.copy}</p>
             <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-[rgba(75,63,163,0.25)] px-4 py-2 text-sm font-medium text-white/82">
-              <Check className="h-4 w-4 text-[var(--bridge-yellow)]" />
+              <Check className="h-4 w-4 text-[var(--tazmify-yellow)]" />
               {item.solution}
             </div>
           </MotionSection>
@@ -404,7 +404,7 @@ function FeatureColumn({
 }) {
   return (
     <MotionSection id={id} className="glass-panel p-5 sm:p-7">
-      <p className={`text-sm font-semibold uppercase ${accent === "orange" ? "text-[var(--bridge-orange)]" : "text-[var(--bridge-yellow)]"}`}>
+      <p className={`text-sm font-semibold uppercase ${accent === "orange" ? "text-[var(--tazmify-orange)]" : "text-[var(--tazmify-yellow)]"}`}>
         {eyebrow}
       </p>
       <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight sm:text-4xl">{title}</h2>
@@ -450,7 +450,7 @@ function AppShowcase() {
         <div className="showcase-grid" />
         <div className="relative grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold uppercase text-[var(--bridge-yellow)]">App showcase</p>
+            <p className="text-sm font-semibold uppercase text-[var(--tazmify-yellow)]">App showcase</p>
             <h2 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
               A cinematic workspace for creator campaigns.
             </h2>
@@ -503,7 +503,7 @@ function Testimonials() {
       <div className="mt-10 grid gap-4 lg:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <MotionSection key={testimonial.name} delay={index * 0.08} className="glass-card p-6">
-            <div className="flex gap-1 text-[var(--bridge-yellow)]">
+            <div className="flex gap-1 text-[var(--tazmify-yellow)]">
               {Array.from({ length: 5 }).map((_, starIndex) => (
                 <Star key={starIndex} className="h-4 w-4 fill-current" />
               ))}
@@ -512,7 +512,7 @@ function Testimonials() {
               {testimonial.quote}
             </p>
             <div className="mt-8 flex items-center gap-3">
-              <div className="h-11 w-11 rounded-full border border-white/12 bg-[linear-gradient(135deg,var(--bridge-orange),var(--bridge-purple))]" />
+              <div className="h-11 w-11 rounded-full border border-white/12 bg-[linear-gradient(135deg,var(--tazmify-orange),var(--tazmify-purple))]" />
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
                 <p className="text-sm text-white/42">{testimonial.role}</p>
@@ -530,7 +530,7 @@ function FinalCta() {
     <section id="join" className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <MotionSection className="relative overflow-hidden border border-white/10 bg-[linear-gradient(135deg,rgba(242,100,34,0.18),rgba(75,63,163,0.22)_48%,rgba(245,178,27,0.12))] px-6 py-16 text-center shadow-[0_40px_150px_rgba(242,100,34,0.14)] backdrop-blur-2xl sm:px-10">
         <div className="relative mx-auto max-w-4xl">
-          <p className="text-sm font-semibold uppercase text-[var(--bridge-yellow)]">Join Bridge</p>
+          <p className="text-sm font-semibold uppercase text-[var(--tazmify-yellow)]">Join Tazmify</p>
           <h2 className="mt-4 text-4xl font-semibold leading-tight sm:text-6xl">
             Ready to build your next viral campaign?
           </h2>
@@ -538,11 +538,11 @@ function FinalCta() {
             Join the early marketplace where creators and brands meet, match, collaborate, and grow together.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <a href="mailto:bridgeappadmin@gmail.com" className="animated-button inline-flex min-h-13 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold text-white">
+            <a href="mailto:tazmifyappadmin@gmail.com" className="animated-button inline-flex min-h-13 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold text-white">
               Join Waitlist
               <ArrowRight className="h-4 w-4" />
             </a>
-            <a href="mailto:bridgeappadmin@gmail.com?subject=Start%20as%20Creator" className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/12 bg-white/[0.07] px-6 text-sm font-semibold text-white backdrop-blur-xl transition hover:bg-white/[0.11]">
+            <a href="mailto:tazmifyappadmin@gmail.com?subject=Start%20as%20Creator" className="inline-flex min-h-13 items-center justify-center gap-2 rounded-full border border-white/12 bg-white/[0.07] px-6 text-sm font-semibold text-white backdrop-blur-xl transition hover:bg-white/[0.11]">
               Start as Creator
               <ChevronRight className="h-4 w-4" />
             </a>
@@ -558,9 +558,9 @@ function Footer() {
     <footer className="relative mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6 lg:px-8">
       <div className="flex flex-col gap-8 border-t border-white/8 pt-8 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
-          <BridgeMark className="h-9 w-auto" />
+          <TazmifyMark className="h-9 w-auto" />
           <div>
-            <p className="font-semibold">Bridge</p>
+            <p className="font-semibold">Tazmify</p>
             <p className="text-sm text-white/42">Creator campaigns, connected.</p>
           </div>
         </div>
@@ -568,7 +568,7 @@ function Footer() {
           <a href="#features" className="hover:text-white">Product</a>
           <a href="#creators" className="hover:text-white">Creators</a>
           <a href="#brands" className="hover:text-white">Brands</a>
-          <a href="mailto:bridgeappadmin@gmail.com" className="hover:text-white">Contact</a>
+          <a href="mailto:tazmifyappadmin@gmail.com" className="hover:text-white">Contact</a>
           <a href="/privacy-policy" className="hover:text-white">Privacy</a>
         </div>
         <div className="flex items-center gap-3 text-white/48">
@@ -577,7 +577,7 @@ function Footer() {
           <HeartHandshake className="h-5 w-5" />
         </div>
       </div>
-      <p className="mt-8 text-sm text-white/32">Copyright 2026 Bridge. All rights reserved.</p>
+      <p className="mt-8 text-sm text-white/32">Copyright 2026 HTPL. All rights reserved.</p>
     </footer>
   );
 }
@@ -587,7 +587,7 @@ function StepTimeline({ title, steps, icon: Icon }: { title: string; steps: stri
     <MotionSection className="glass-panel p-6">
       <div className="flex items-center gap-3">
         <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/[0.07]">
-          <Icon className="h-5 w-5 text-[var(--bridge-yellow)]" />
+          <Icon className="h-5 w-5 text-[var(--tazmify-yellow)]" />
         </div>
         <h3 className="text-2xl font-semibold">{title}</h3>
       </div>
@@ -601,7 +601,7 @@ function StepTimeline({ title, steps, icon: Icon }: { title: string; steps: stri
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2 + index * 0.15 }}
-                className="absolute left-[calc(50%+24px)] top-6 hidden h-px w-[calc(100%-48px)] origin-left bg-[linear-gradient(90deg,var(--bridge-orange),var(--bridge-yellow))] sm:block"
+                className="absolute left-[calc(50%+24px)] top-6 hidden h-px w-[calc(100%-48px)] origin-left bg-[linear-gradient(90deg,var(--tazmify-orange),var(--tazmify-yellow))] sm:block"
               />
             ) : null}
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/12 bg-[#111222] text-sm font-semibold">
@@ -618,7 +618,7 @@ function StepTimeline({ title, steps, icon: Icon }: { title: string; steps: stri
 function SectionIntro({ eyebrow, title, copy }: { eyebrow: string; title: string; copy: string }) {
   return (
     <MotionSection className="max-w-3xl">
-      <p className="text-sm font-semibold uppercase text-[var(--bridge-yellow)]">{eyebrow}</p>
+      <p className="text-sm font-semibold uppercase text-[var(--tazmify-yellow)]">{eyebrow}</p>
       <h2 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">{title}</h2>
       <p className="mt-5 text-base leading-8 text-white/56">{copy}</p>
     </MotionSection>
@@ -666,7 +666,7 @@ function FloatingCard({ children, className, delay }: { children: React.ReactNod
 function CardHeader({ icon: Icon, label }: { icon: LucideIcon; label: string }) {
   return (
     <div className="flex items-center gap-2 text-xs font-semibold uppercase text-white/48">
-      <Icon className="h-4 w-4 text-[var(--bridge-yellow)]" />
+      <Icon className="h-4 w-4 text-[var(--tazmify-yellow)]" />
       {label}
     </div>
   );
@@ -699,7 +699,7 @@ function MobileCampaign({ title, price, match, color }: { title: string; price: 
 
 function ShowcaseRow({ label, value, tone }: { label: string; value: string; tone: "orange" | "yellow" | "purple" }) {
   const color =
-    tone === "orange" ? "var(--bridge-orange)" : tone === "yellow" ? "var(--bridge-yellow)" : "var(--bridge-purple)";
+    tone === "orange" ? "var(--tazmify-orange)" : tone === "yellow" ? "var(--tazmify-yellow)" : "var(--tazmify-purple)";
   return (
     <div className="flex items-center justify-between rounded-lg border border-white/8 bg-white/[0.05] px-4 py-3">
       <span className="text-sm text-white/54">{label}</span>
@@ -713,7 +713,7 @@ function ShowcaseRow({ label, value, tone }: { label: string; value: string; ton
 function MessageBubble({ side, text }: { side: "left" | "right"; text: string }) {
   return (
     <div className={`flex ${side === "right" ? "justify-end" : "justify-start"}`}>
-      <div className={`max-w-[82%] rounded-lg px-4 py-3 text-sm leading-6 ${side === "right" ? "bg-[var(--bridge-orange)] text-white" : "bg-white/[0.08] text-white/70"}`}>
+      <div className={`max-w-[82%] rounded-lg px-4 py-3 text-sm leading-6 ${side === "right" ? "bg-[var(--tazmify-orange)] text-white" : "bg-white/[0.08] text-white/70"}`}>
         {text}
       </div>
     </div>
@@ -723,18 +723,18 @@ function MessageBubble({ side, text }: { side: "left" | "right"; text: string })
 function AvatarStack() {
   return (
     <div className="flex -space-x-2">
-      {["var(--bridge-orange)", "var(--bridge-yellow)", "var(--bridge-purple)"].map((color) => (
+      {["var(--tazmify-orange)", "var(--tazmify-yellow)", "var(--tazmify-purple)"].map((color) => (
         <span key={color} className="h-9 w-9 rounded-full border-2 border-[#111222]" style={{ background: color }} />
       ))}
     </div>
   );
 }
 
-function BridgeMark({ className }: { className?: string }) {
+function TazmifyMark({ className }: { className?: string }) {
   return (
     <Image
-      src="/bridge-logo.svg"
-      alt="Bridge"
+      src="/tazmify-logo.svg"
+      alt="Tazmify"
       width={60}
       height={32}
       className={className}

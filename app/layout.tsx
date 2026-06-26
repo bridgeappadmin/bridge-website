@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bridge | Brand and Creator Campaigns",
+  title: "Tazmify | Brand and Creator Campaigns",
   description:
-    "Bridge is a premium influencer marketplace where brands and creators discover, launch, and collaborate on campaigns.",
+    "Tazmify is a premium influencer marketplace where brands and creators discover, launch, and collaborate on campaigns.",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full font-sans text-[var(--bridge-ink)]">
+      <body className="min-h-full font-sans text-[var(--tazmify-ink)]">
         {children}
       </body>
     </html>
