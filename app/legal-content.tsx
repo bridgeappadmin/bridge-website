@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { ReactNode } from "react";
 
 export const supportEmail = "tazmifyappadmin@gmail.com";
-export const lastUpdated = "May 14, 2026";
+export const lastUpdated = "August 11, 2026";
 
 type LegalSection = {
   title: string;
@@ -55,6 +55,38 @@ export const privacySections: LegalSection[] = [
       "Instagram analytics may be used to help brands evaluate creator profiles, improve creator discovery, support campaign collaboration decisions, and provide analytics insights within the platform.",
       "Users may disconnect their Instagram account at any time through account settings.",
       "When an Instagram account is disconnected or a deletion request is completed, Tazmify removes connected Instagram tokens and deletes stored Instagram analytics data unless limited retention is required for legal or security purposes.",
+    ],
+  },
+  {
+    title: "YouTube Integration",
+    body: (
+      <>
+        Tazmify allows creators to voluntarily connect their YouTube channel using
+        Google&apos;s official OAuth authorization system. With user permission,
+        Tazmify accesses data through the YouTube Data API and the YouTube Analytics
+        API. Tazmify does not access or store Google or YouTube passwords.
+        Tazmify&apos;s use of YouTube API Services is subject to the{" "}
+        <LegalLink href="https://www.youtube.com/t/terms">
+          YouTube Terms of Service
+        </LegalLink>
+        , and Google&apos;s handling of your data is described in the{" "}
+        <LegalLink href="https://policies.google.com/privacy">
+          Google Privacy Policy
+        </LegalLink>
+        . Tazmify&apos;s use and transfer of information received from Google APIs
+        adheres to the{" "}
+        <LegalLink href="https://developers.google.com/terms/api-services-user-data-policy">
+          Google API Services User Data Policy
+        </LegalLink>
+        , including the Limited Use requirements.
+      </>
+    ),
+    items: [
+      "Channel information: channel title, subscriber count, total view count, and video count.",
+      "Channel analytics for the creator's own channel over the last 30 days: views, estimated watch time, average view duration, subscribers gained, likes, and comments.",
+      "YouTube analytics may be used to help brands evaluate creator profiles, improve creator discovery, support campaign collaboration decisions, and provide analytics insights within the platform.",
+      "Users may disconnect their YouTube channel at any time through account settings, and may revoke Tazmify's access at any time via the Google security settings page at https://myaccount.google.com/permissions.",
+      "When a YouTube channel is disconnected or a deletion request is completed, Tazmify removes the stored Google OAuth token and deletes stored YouTube analytics data unless limited retention is required for legal or security purposes.",
     ],
   },
   {
@@ -111,8 +143,9 @@ export const privacySections: LegalSection[] = [
     body: (
       <>
         Users may request deletion of their account and associated data through
-        platform settings or by contacting support. Instagram connections can also
-        be disconnected at any time. Deletion requests can be sent to{" "}
+        platform settings or by contacting support. Instagram and YouTube
+        connections can also be disconnected at any time. Deletion requests can be
+        sent to{" "}
         <LegalEmail /> if a user cannot access the Tazmify application.
       </>
     ),
@@ -122,7 +155,8 @@ export const privacySections: LegalSection[] = [
     body: (
       <>
         Tazmify may integrate with third-party platforms and services including
-        Instagram / Meta, Google Sign-In, and Apple Sign-In. Use of third-party
+        Instagram / Meta, YouTube / Google (YouTube Data API and YouTube Analytics
+        API), Google Sign-In, and Apple Sign-In. Use of third-party
         services may also be subject to their respective privacy policies and
         terms. Tazmify is not responsible for the privacy practices of third-party
         services.
@@ -218,6 +252,24 @@ export const termsSections: LegalSection[] = [
     ),
   },
   {
+    title: "YouTube Integration",
+    body: (
+      <>
+        Tazmify may allow creators to connect their YouTube channel through
+        Google&apos;s official OAuth authorization system. By connecting YouTube,
+        users authorize Tazmify to access permitted channel and analytics data
+        through the YouTube Data API and the YouTube Analytics API. By using the
+        YouTube integration, you also agree to be bound by the{" "}
+        <LegalLink href="https://www.youtube.com/t/terms">
+          YouTube Terms of Service
+        </LegalLink>
+        . Tazmify is not affiliated with, endorsed by, or operated by YouTube or
+        Google. Users may disconnect YouTube integrations at any time through
+        account settings.
+      </>
+    ),
+  },
+  {
     title: "Prohibited Activities",
     items: [
       "Provide false or misleading information.",
@@ -260,7 +312,8 @@ export const termsSections: LegalSection[] = [
     body: (
       <>
         Tazmify may integrate with third-party services including Instagram / Meta,
-        Google Sign-In, and Apple Sign-In. Use of third-party services may also be
+        YouTube / Google (YouTube Data API and YouTube Analytics API), Google
+        Sign-In, and Apple Sign-In. Use of third-party services may also be
         subject to those providers&apos; own terms and policies. Tazmify is not
         responsible for third-party services or platforms.
       </>
@@ -317,8 +370,9 @@ export const deletionSections: LegalSection[] = [
     body: (
       <>
         Users may request deletion of their Tazmify account and associated data at
-        any time. This includes connected Instagram analytics data stored by
-        Tazmify, subject to limited retention where required for legal, security,
+        any time. This includes connected social account data (Instagram and
+        YouTube analytics) stored by Tazmify, subject to limited retention where
+        required for legal, security,
         fraud-prevention, or compliance purposes.
       </>
     ),
@@ -344,6 +398,22 @@ export const deletionSections: LegalSection[] = [
     ),
   },
   {
+    title: "Disconnect YouTube",
+    body: (
+      <>
+        Users may disconnect their YouTube channel at any time through account
+        settings. Disconnecting removes the stored Google OAuth token from Tazmify
+        and prevents Tazmify from continuing to access YouTube data through that
+        connection. Users may also revoke access at any time via the Google security
+        settings page at{" "}
+        <LegalLink href="https://myaccount.google.com/permissions">
+          myaccount.google.com/permissions
+        </LegalLink>
+        .
+      </>
+    ),
+  },
+  {
     title: "Request Deletion By Email",
     body: (
       <>
@@ -356,8 +426,8 @@ export const deletionSections: LegalSection[] = [
   {
     title: "After Deletion Is Processed",
     items: [
-      "Connected Instagram tokens are removed.",
-      "Stored Instagram analytics data is deleted.",
+      "Connected Instagram and YouTube tokens are removed.",
+      "Stored Instagram and YouTube analytics data is deleted.",
       "Account access is permanently disabled.",
       "Some limited information may be retained where required for legal, security, fraud-prevention, or compliance purposes.",
     ],
@@ -528,6 +598,19 @@ function LegalEmail() {
       className="font-semibold text-[var(--tazmify-yellow)] transition hover:text-white"
     >
       {supportEmail}
+    </a>
+  );
+}
+
+function LegalLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold text-[var(--tazmify-yellow)] transition hover:text-white"
+    >
+      {children}
     </a>
   );
 }
