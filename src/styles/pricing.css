@@ -1,0 +1,258 @@
+.pricing {
+  padding-top: 40px;
+}
+.billing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 48px;
+  font: 400 14px/21px var(--body);
+  color: var(--ink-400);
+  text-transform: uppercase;
+}
+.billing > span {
+  white-space: nowrap;
+}
+.billing span.is-on {
+  color: var(--ink-950);
+}
+.billing em {
+  font-style: normal;
+  color: var(--green);
+  text-transform: none;
+}
+.billing svg {
+  vertical-align: -3px;
+  color: #ffb02e;
+}
+.switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--ink-200);
+  transition: background 0.3s var(--ease);
+}
+.switch span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px #0000002e;
+  transition: transform 0.3s var(--ease);
+}
+.switch.is-on {
+  background: var(--violet-500);
+}
+.switch.is-on span {
+  transform: translateX(20px);
+}
+.price-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  padding: 24px;
+  border-radius: 56px;
+  background: var(--ink-50);
+  color: var(--ink-950);
+}
+.plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px;
+  border-radius: 56px;
+}
+.plan-plus {
+  background: #fff;
+  box-shadow: 0 0 10px #0000001a;
+}
+.plan-premium {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 20%, #a8b8ff 0%, #a8b8ff00 70%),
+    radial-gradient(ellipse 60% 60% at 80% 35%, #ffa1ee 0%, #ffa1ee00 70%),
+    radial-gradient(ellipse 60% 50% at 40% 85%, #c6d8ff 0%, #c6d8ff00 70%), #fff;
+  box-shadow: 0 0 10px #0000001a;
+}
+.plan-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.plan-name h3 {
+  font: 500 24px/30px var(--body);
+  letter-spacing: -0.02em;
+}
+.plan-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font: 400 14px/18px var(--body);
+}
+.plan-badge-gray {
+  background: var(--ink-200);
+  color: var(--ink-500);
+}
+.plan-badge-violet {
+  background: var(--violet-200);
+  color: var(--violet-800);
+}
+.plan-badge-white {
+  background: #ffffffcc;
+  color: var(--ink-800);
+}
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 32px;
+}
+.plan-price strong {
+  font: 900 48px/48px var(--display);
+  letter-spacing: -0.02em;
+}
+.plan-price strong i {
+  font-style: normal;
+  color: var(--ink-400);
+}
+.plan-price span {
+  font: 400 20px/30px var(--body);
+  color: var(--ink-900);
+}
+.plan-text {
+  margin-top: 16px;
+  font: 400 16px/24px var(--body);
+  color: var(--ink-500);
+  min-height: 48px;
+}
+.plan-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-top: 64px;
+  border-radius: 24px;
+  background: #fff;
+  color: var(--ink-950);
+}
+.plan-plus .plan-icon {
+  background: var(--violet-200);
+  color: var(--ink-950);
+}
+.plan-premium .plan-icon {
+  background: var(--violet-800);
+  color: #fff;
+}
+.plan-included {
+  margin-top: 36px;
+  font: 600 16px/24px var(--body);
+}
+.plan ul {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.plan li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 400 14px/21px var(--body);
+  color: var(--ink-900);
+}
+.plan li svg {
+  flex: none;
+  color: var(--ink-500);
+}
+.plan-cta {
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .price-box {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    border-radius: 48px;
+  }
+  .plan {
+    padding: 32px 28px;
+    border-radius: 44px;
+  }
+  .plan-free {
+    background: #fff;
+  }
+  .plan-icon {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 809.98px) {
+  .pricing {
+    padding-top: 16px;
+  }
+  .billing {
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .price-box {
+    padding: 12px;
+    border-radius: 40px;
+  }
+  .plan {
+    padding: 28px 22px;
+    border-radius: 32px;
+  }
+}
+
+/* Connects packs: facts row under the lead and the coin row on each card. */
+.connects-facts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+.connects-facts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--ink-50);
+  font: 500 14px/20px var(--body);
+  color: var(--ink-800);
+}
+.connects-facts svg {
+  color: var(--violet-500);
+}
+.plan-connects {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+.plan-coin {
+  flex: none;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 12px 18px #5b3fe040);
+}
+.plan-connects strong {
+  display: block;
+  font: 600 18px/24px var(--body);
+  color: var(--ink-950);
+}
+.plan-connects small {
+  display: block;
+  margin-top: 2px;
+  font: 400 14px/20px var(--body);
+  color: var(--ink-500);
+}

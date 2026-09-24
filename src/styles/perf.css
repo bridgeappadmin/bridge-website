@@ -1,0 +1,102 @@
+/* Performance pass. Loaded last so it overrides the decorative defaults.
+   Rules of thumb applied here:
+   - backdrop-filter re-blurs whatever scrolls behind it on every frame, so
+     radii stay small and near-opaque surfaces drop it entirely;
+   - filter: blur() on huge glow layers is redundant next to radial gradients;
+   - mix-blend-mode forces extra compositing passes over large areas;
+   - the blur-in headings run on CSS transitions instead of per-letter
+     animated components. */
+
+/* Blur-in headings */
+.bt-ch {
+  will-change: auto;
+  opacity: 0;
+  transform: translateY(8px);
+  filter: blur(12px);
+  transition:
+    opacity 0.5s var(--ease),
+    transform 0.5s var(--ease),
+    filter 0.5s var(--ease);
+  transition-delay: calc(var(--bt-delay, 0.1s) + var(--i, 0) * 25ms);
+}
+.bt.is-in .bt-ch {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Backdrop blurs */
+.nav-menu,
+.nav.is-scrolled .nav-menu {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.hero-glass,
+.hcard,
+.st-pill {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.footer-card {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+.wallet-balance,
+.subscribe input {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* Large glows: the gradients already fade out; no extra blur pass. */
+.aurora,
+.growth-glow,
+.footer-glow,
+.hero-phone-wrap::after {
+  filter: none;
+}
+.aurora {
+  opacity: 0.8;
+}
+
+/* Blend modes */
+.hero-bg::after,
+.page-hero-bg::after {
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+.cta-title {
+  mix-blend-mode: normal;
+}
+.featured-media img,
+.article-cover img {
+  mix-blend-mode: normal;
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+/* Softer, cheaper phone shadows */
+.scr-mock,
+.gcard-mock,
+.story-phone,
+.arc-phone-wrap .mockup,
+.cta-phone-wrap .mockup {
+  filter: drop-shadow(0 20px 36px #2b1f5c3d);
+}
+
+@media (max-width: 809.98px) {
+  .nav-bar,
+  .nav.is-scrolled .nav-bar,
+  .nav-menu {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (min-width: 810px) {
+  .bt-ch {
+    transition: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}

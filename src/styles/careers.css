@@ -1,0 +1,325 @@
+/* ---------- Why join us ---------- */
+.different {
+  padding-bottom: 60px;
+}
+.different-box {
+  position: relative;
+  padding: 96px 64px 0;
+  border-radius: 80px;
+  background: var(--ink-950);
+  color: #fff;
+  overflow: hidden;
+}
+.different-text {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+  font: 500 32px/44px var(--body);
+  letter-spacing: -0.02em;
+}
+.different-text em {
+  font-style: normal;
+  color: var(--violet-500);
+}
+.perks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 12px;
+  max-width: 1120px;
+  margin: 56px auto 0;
+}
+.perks li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
+  border-radius: 999px;
+  background: #ffffff1a;
+  font: 400 16px/24px var(--body);
+}
+.perk-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff33;
+  color: #fff;
+}
+.faces {
+  margin: 80px -64px 0;
+  padding-bottom: 80px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 10%,
+    #000 90%,
+    transparent
+  );
+}
+.faces-track {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  padding-right: 10px;
+  animation: ticker 64s linear infinite;
+}
+.face {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--violet-200);
+}
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 15%;
+}
+
+/* ---------- Ideal teammates ---------- */
+.teammates {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.traits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.trait {
+  padding: 0 32px 40px;
+  border-radius: 48px;
+  background: var(--ink-50);
+  color: var(--ink-800);
+  text-align: center;
+  overflow: hidden;
+}
+.trait-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  margin: 0 -32px;
+  background: var(--violet-500);
+  color: #fff;
+  border-radius: 0 0 48px 48px;
+}
+.trait h3 {
+  margin-top: 32px;
+  font: 500 24px/30px var(--body);
+  letter-spacing: -0.02em;
+}
+.trait p {
+  margin-top: 24px;
+  font: 400 16px/24px var(--body);
+  color: var(--ink-700);
+}
+
+/* ---------- Openings ---------- */
+.openings {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.jobs {
+  padding: 16px;
+  border-radius: 48px;
+  background: var(--ink-50);
+}
+.job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 24px;
+  border-radius: 32px;
+  background: #fff;
+  color: var(--ink-950);
+}
+.job + .job {
+  margin-top: 12px;
+}
+.job-main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+}
+.job h3 {
+  font: 500 28px/34px var(--body);
+  letter-spacing: -0.02em;
+}
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.job-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--ink-50);
+  color: var(--ink-500);
+  font: 400 14px/18px var(--body);
+}
+.jobs-note {
+  padding: 48px 24px 40px;
+  text-align: center;
+}
+.jobs-note strong {
+  display: block;
+  font: 600 16px/24px var(--body);
+  color: var(--ink-950);
+}
+.jobs-note p {
+  margin: 12px auto 0;
+  max-width: 520px;
+  font: 400 18px/27px var(--body);
+  color: var(--ink-800);
+}
+.jobs-note a {
+  color: var(--violet-500);
+}
+.jobs-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1199.98px) {
+  .different-box {
+    padding: 64px 32px 0;
+    border-radius: 56px;
+  }
+  .different-text {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .faces {
+    margin: 56px -32px 0;
+    padding-bottom: 56px;
+  }
+  .traits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 809.98px) {
+  .different-box {
+    padding: 48px 20px 0;
+    border-radius: 40px;
+  }
+  .different-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .perks {
+    margin-top: 36px;
+    gap: 10px 8px;
+  }
+  .perks li {
+    font-size: 14px;
+  }
+  .faces {
+    margin: 40px -20px 0;
+    padding-bottom: 40px;
+  }
+  .face {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+  }
+  .teammates,
+  .openings {
+    padding-top: 72px;
+  }
+  .traits-grid {
+    grid-template-columns: 1fr;
+  }
+  .trait {
+    padding: 0 24px 32px;
+    border-radius: 40px;
+  }
+  .trait-icon {
+    margin: 0 -24px;
+    height: 120px;
+    border-radius: 0 0 40px 40px;
+  }
+  .jobs {
+    padding: 8px;
+    border-radius: 32px;
+  }
+  .job {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    border-radius: 24px;
+  }
+  .job h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .job .btn {
+    width: 100%;
+  }
+  .job .btn > span {
+    width: 100%;
+  }
+}
+
+/* Perks ticker: phones only. */
+.perks-ticker {
+  display: none;
+}
+@media (max-width: 809.98px) {
+  .perks {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .perks-ticker {
+    display: block;
+    margin: 32px -20px 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  }
+  .perks-track {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    padding-right: 10px;
+    animation: ticker 30s linear infinite;
+  }
+  .perk-chip {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 16px 6px 6px;
+    border-radius: 999px;
+    background: #ffffff1a;
+    font: 400 15px/22px var(--body);
+    white-space: nowrap;
+  }
+}
+@media (prefers-reduced-motion: reduce) and (min-width: 810px) {
+  .perks-track {
+    animation: none;
+  }
+}

@@ -1,0 +1,183 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: 280px var(--gutter) 0;
+  color: #fff;
+  isolation: isolate;
+}
+.footer-glow {
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  bottom: -160px;
+  width: 1800px;
+  height: 900px;
+  transform: translateX(-50%);
+  background:
+    radial-gradient(ellipse 45% 40% at 50% 80%, #6262fe 0%, #6262fe00 70%),
+    radial-gradient(ellipse 70% 50% at 50% 95%, #381ac9 0%, #381ac900 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.footer-wordmark {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font: 900 clamp(110px, 19vw, 280px) / 1 var(--display);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #6262fe;
+  opacity: 0.22;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #00000000 0%,
+    #000 45%,
+    #000 100%
+  );
+  mask-image: linear-gradient(180deg, #00000000 0%, #000 45%, #000 100%);
+  pointer-events: none;
+}
+.footer-wordmark img {
+  width: 0.7em;
+  height: 0.85em;
+  filter: brightness(0) saturate(100%) invert(38%) sepia(90%) saturate(3000%)
+    hue-rotate(228deg);
+}
+.footer-top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto -24px;
+  border-radius: 12px;
+  background: #ffffff1f;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px #0206171f;
+  color: #fff;
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease;
+}
+.footer-top:hover {
+  transform: translateY(-2px);
+  background: #ffffff33;
+}
+.footer-cards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: var(--content);
+  margin: 0 auto;
+}
+.footer-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: start;
+  padding: 56px 48px 40px;
+  border-radius: 80px 80px 0 0;
+  background: #ffffff1f;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  box-shadow: inset 0 1px 0 #ffffff33;
+}
+.footer-card h4 {
+  font: 900 36px/36px var(--display);
+  text-transform: uppercase;
+}
+.footer-card ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 4px 24px;
+  font: 400 16px/24px var(--body);
+}
+.footer-list-2 {
+  grid-template-columns: repeat(2, auto) !important;
+}
+.footer-card a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 60px 96px 48px;
+  border-radius: 80px 80px 0 0;
+  background: linear-gradient(180deg, #ffffffd9, #fff 70%);
+  color: var(--ink-800);
+  font: 400 14px/21px var(--body);
+}
+.footer-bottom span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 1199.98px) {
+  .footer {
+    padding-top: 280px;
+  }
+  .footer-cards {
+    grid-template-columns: 1fr;
+  }
+  .footer-card {
+    border-radius: 56px 56px 0 0;
+    padding: 40px 32px 32px;
+  }
+  .footer-card:first-child {
+    border-radius: 56px 56px 0 0;
+  }
+  .footer-bottom {
+    padding: 40px 32px 32px;
+    border-radius: 56px 56px 0 0;
+  }
+}
+@media (max-width: 809.98px) {
+  .footer {
+    padding-top: 150px;
+  }
+  /* On phones the cards stack tall, so the wordmark sits in the space above
+     them instead of hiding behind them. */
+  .footer-wordmark {
+    top: 36px;
+    bottom: auto;
+    gap: 8px;
+    font-size: 19vw;
+  }
+  .footer-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 32px 24px 28px;
+    border-radius: 40px 40px 0 0;
+  }
+  .footer-card ul,
+  .footer-list-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px 16px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px 28px;
+    border-radius: 40px 40px 0 0;
+    gap: 10px;
+  }
+}

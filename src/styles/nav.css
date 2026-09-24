@@ -1,0 +1,217 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  padding: 32px var(--gutter) 0;
+  pointer-events: none;
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  max-width: var(--content);
+  margin: 0 auto;
+  pointer-events: auto;
+}
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  justify-self: start;
+  color: var(--white);
+  border-radius: 20px;
+  transition: background 0.3s var(--ease);
+}
+/* App icon from Figma (340:25): violet superellipse with the two-tone mark. */
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition:
+    width 0.3s var(--ease),
+    height 0.3s var(--ease);
+}
+.nav-wordmark {
+  font:
+    800 28px/1 Urbanist,
+    var(--body);
+  letter-spacing: -0.04em;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 4px;
+  border-radius: 20px;
+  background: #ffffff26;
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  transition: background 0.4s var(--ease);
+}
+.nav-menu a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 16px;
+  color: var(--white);
+  font: 400 16px/24px var(--body);
+  letter-spacing: -0.02em;
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease,
+    opacity 0.18s ease;
+}
+.nav-menu a:hover {
+  background: #ffffff1a;
+}
+.nav-menu a.is-active {
+  background: var(--white-20);
+}
+.nav-dot {
+  display: none;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.nav-menu a.is-active .nav-dot {
+  display: block;
+}
+.nav-cta {
+  justify-self: end;
+}
+.nav-menu .nav-cta-mobile,
+.nav-toggle {
+  display: none;
+}
+.nav.is-scrolled .nav-menu {
+  background: #00000066;
+}
+.nav.is-compact .nav-bar {
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+}
+.nav.is-compact .nav-logo {
+  width: 48px;
+  gap: 0;
+}
+.nav.is-compact .nav-logo img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 6px 14px #381ac94d);
+}
+
+@media (max-width: 809.98px) {
+  .nav {
+    padding: 16px var(--gutter) 0;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 10px 10px 10px 16px;
+    border-radius: 24px;
+    background: #ffffff26;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    transition: background 0.4s var(--ease);
+  }
+  .nav.is-scrolled .nav-bar {
+    background: #00000099;
+  }
+  .nav-logo img {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-wordmark {
+    font-size: 24px;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 96px;
+    left: var(--gutter);
+    right: var(--gutter);
+    display: none;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 12px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    border-radius: 24px;
+    background: #121214f2;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 24px 60px #00000066;
+  }
+  .nav-menu.is-open {
+    display: flex;
+  }
+  .nav-menu a {
+    height: 48px;
+    border-radius: 16px;
+  }
+  .nav-cta {
+    display: none;
+  }
+  .nav-menu .nav-cta-mobile {
+    display: inline-flex;
+    height: auto;
+    padding: 2px;
+    margin-top: 8px;
+    color: var(--ink-800);
+    border-radius: 22px;
+  }
+  .nav-menu .nav-cta-mobile:hover {
+    background: linear-gradient(#e0e0e033, #e0e0e066);
+  }
+  .nav-cta-mobile > span {
+    width: 100%;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    background: var(--white);
+    color: var(--ink-950);
+  }
+}
+
+/* Unscrolled: the bare two-tone mark, no tile. */
+.nav-logo img.nav-logo-mark {
+  width: 32px;
+  height: 38px;
+}
+@media (max-width: 809.98px) {
+  .nav-logo img.nav-logo-mark {
+    width: 28px;
+    height: 34px;
+  }
+}
+
+/* Mobile menu: a darker glass panel in every nav state (the scrolled/compact
+   nav rules are more specific and were making it too see-through). */
+@media (max-width: 809.98px) {
+  .nav .nav-menu,
+  .nav.is-scrolled .nav-menu,
+  .nav.is-compact .nav-menu {
+    background: #0e0e12eb;
+    -webkit-backdrop-filter: blur(28px) saturate(140%);
+    backdrop-filter: blur(28px) saturate(140%);
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 24px 60px #000000b3;
+  }
+  .nav .nav-menu a:not(.nav-cta-mobile) {
+    color: #fff;
+  }
+}

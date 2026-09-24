@@ -1,0 +1,363 @@
+.testimonials {
+  position: relative;
+  height: 200vh;
+  padding: 0 var(--gutter);
+}
+.testi-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.testi-box {
+  position: relative;
+  width: 100%;
+  max-width: var(--content);
+  height: min(904px, calc(100vh - 96px));
+  margin: 0 auto;
+  border-radius: 80px;
+  background: var(--ink-950);
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testi-head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  padding: 0 24px;
+}
+.testi-head .h2 {
+  font-size: 72px;
+}
+.ratings {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+.rating-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--ink-950);
+  box-shadow:
+    inset 0 0 5px #ffffff40,
+    0 0 0 1px #ffffff1a;
+  color: #fff;
+}
+.rating strong {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font: 400 14px/21px var(--body);
+}
+.rating small {
+  display: block;
+  font: 400 12px/18px var(--body);
+  letter-spacing: -0.05em;
+  color: var(--ink-400);
+}
+.testi-cards {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.tcard {
+  position: absolute;
+  width: 300px;
+  padding: 28px;
+  border-radius: 40px;
+  box-shadow: 0 15px 25px #0000000d;
+  color: var(--ink-950);
+  background: #fff;
+  pointer-events: auto;
+  will-change: transform;
+}
+.tcard-stars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.tcard p {
+  font: 400 16px/24px var(--body);
+  letter-spacing: -0.02em;
+}
+.tcard-quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 6px;
+  background: #ffffff33;
+  vertical-align: -3px;
+}
+.tcard footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+/* Corner slots. Each card scales from its own corner so the measured gap to
+   the box edge stays fixed. */
+.tcard-lt {
+  left: 32px;
+  top: 32px;
+  transform-origin: 0 0;
+}
+.tcard-lb {
+  left: 32px;
+  bottom: 32px;
+  transform-origin: 0 100%;
+}
+.tcard-rt {
+  right: 32px;
+  top: 32px;
+  transform-origin: 100% 0;
+}
+.tcard-rb {
+  right: 32px;
+  bottom: 32px;
+  transform-origin: 100% 100%;
+}
+.testimonials:not(.is-static) .testi-head {
+  max-width: 600px;
+}
+.tcard-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+.tcard-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+.tcard footer strong {
+  display: block;
+  font: 600 14px/18px var(--body);
+}
+.tcard footer small {
+  display: block;
+  font: 400 14px/21px var(--body);
+  opacity: 0.75;
+}
+.tcard-dark {
+  background: linear-gradient(180deg, #1b1b1f, #000);
+  color: #fff;
+}
+.tcard-dark .tcard-quote {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #ffffff1a;
+  display: flex;
+  margin: 0 0 24px;
+}
+.tcard-dark .tcard-quote svg {
+  width: 20px;
+  height: 20px;
+}
+.tcard-blue {
+  background: #0b3ad9;
+  color: #fff;
+}
+.tcard-magenta {
+  background: #c236d9;
+  color: #fff;
+}
+.tcard-sky {
+  background: linear-gradient(160deg, #bfd2ff, #fff);
+}
+.tcard-sky .tcard-quote {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--violet-300);
+  color: #fff;
+  display: flex;
+  margin: 0 0 24px;
+}
+.tcard-sky .tcard-quote svg {
+  width: 20px;
+  height: 20px;
+}
+.tcard-lavender {
+  background: linear-gradient(180deg, #bebeff, #fff);
+}
+.tcard-lavender .tcard-stars {
+  color: var(--violet-500);
+}
+.tcard-lavender .tcard-quote {
+  background: #12121414;
+}
+
+/* Static (mobile / reduced motion) */
+.testimonials.is-static {
+  height: auto;
+  padding: 40px var(--gutter) 0;
+}
+.testimonials.is-static .testi-pin {
+  position: static;
+  height: auto;
+  display: block;
+}
+.testimonials.is-static .testi-box {
+  height: auto;
+  display: block;
+  padding: 64px 0 40px;
+  border-radius: var(--sheet-radius);
+}
+.testimonials.is-static .testi-head {
+  margin: 0 auto;
+}
+.testimonials.is-static .testi-cards {
+  position: relative;
+  inset: auto;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 48px 24px 24px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testimonials.is-static .testi-cards::-webkit-scrollbar {
+  display: none;
+}
+.testimonials.is-static .tcard {
+  position: relative;
+  inset: auto;
+  flex: 0 0 min(320px, 82vw);
+  width: auto;
+  min-width: 0;
+  scroll-snap-align: start;
+  scroll-margin-left: 24px;
+  transform: none !important;
+}
+
+@media (max-width: 1299.98px) {
+  .testi-head .h2 {
+    font-size: 56px;
+  }
+  .testimonials:not(.is-static) .testi-head {
+    max-width: 440px;
+  }
+  .testimonials:not(.is-static) .tcard {
+    width: 260px;
+  }
+  .tcard {
+    padding: 24px;
+  }
+  .tcard p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 809.98px) {
+  .testi-head .h2 {
+    font-size: 40px;
+  }
+  .ratings {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+/* Short laptop windows: keep the scatter layout by tightening the cards and
+   heading rather than falling back to the swipe row. */
+@media (min-width: 1024px) and (max-height: 760px) {
+  .testimonials:not(.is-static) .testi-head .h2 {
+    font-size: 56px;
+  }
+  .testimonials:not(.is-static) .testi-head {
+    max-width: 480px;
+  }
+  .testimonials:not(.is-static) .testi-head .lead {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonials:not(.is-static) .ratings {
+    margin-top: 20px;
+  }
+  .testimonials:not(.is-static) .tcard {
+    width: 260px;
+    padding: 20px 22px;
+    border-radius: 32px;
+  }
+  .testimonials:not(.is-static) .tcard p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .testimonials:not(.is-static) .tcard-stars {
+    margin-bottom: 12px;
+  }
+  .testimonials:not(.is-static) .tcard-stars svg {
+    width: 16px;
+    height: 16px;
+  }
+  .testimonials:not(.is-static) .tcard footer {
+    margin-top: 16px;
+  }
+  .testimonials:not(.is-static) .tcard-dark .tcard-quote,
+  .testimonials:not(.is-static) .tcard-sky .tcard-quote {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 14px;
+    border-radius: 12px;
+  }
+}
+
+/* Phones and tablets: testimonials run as an endless ticker. */
+.testimonials.is-ticker .testi-cards {
+  display: block;
+  overflow: hidden;
+  scroll-snap-type: none;
+  padding: 48px 0 24px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.testi-ticker-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: max-content;
+  padding-right: 16px;
+  animation: ticker 40s linear infinite;
+}
+.testi-ticker-track:hover {
+  animation-play-state: paused;
+}
+.testi-ticker-item {
+  flex: 0 0 auto;
+  width: min(300px, 78vw);
+}
+.testimonials.is-ticker .testi-ticker-item .tcard {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  transform: none !important;
+}

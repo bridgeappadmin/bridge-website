@@ -1,0 +1,269 @@
+.growth {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  overflow: hidden;
+}
+.growth-carousel {
+  position: relative;
+  z-index: 1;
+}
+.growth-stage {
+  position: relative;
+  height: 728px;
+  touch-action: pan-y pinch-zoom;
+}
+.gcard {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: var(--growth-card-width, 484px);
+  height: 648px;
+  margin-left: calc(var(--growth-card-width, 484px) / -2);
+  padding: 12px;
+  border-radius: 64px;
+  background: var(--ink-900);
+  box-shadow: 0 16px 40px #00000040;
+  display: flex;
+  flex-direction: column;
+  transform-origin: center center;
+}
+.gcard-screen {
+  position: relative;
+  flex: none;
+  height: 55%;
+  border-radius: 54px 54px 32px 32px;
+  background: var(--violet-200);
+  overflow: hidden;
+}
+.gcard-body {
+  padding: 28px 30px 0;
+  opacity: 0.65;
+  transition: opacity 0.4s var(--ease);
+}
+.gcard.is-active .gcard-body {
+  opacity: 1;
+}
+.gcard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gcard .icon-frame {
+  background: var(--white-5);
+  transition: background 0.4s var(--ease);
+}
+.gcard.is-active .icon-frame {
+  background: var(--violet-800);
+}
+.gcard-num {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--white-20);
+  color: var(--white-60);
+  font: 600 13px/1 var(--body);
+  transition:
+    background 0.4s var(--ease),
+    color 0.4s var(--ease);
+}
+.gcard.is-active .gcard-num {
+  background: #fff;
+  color: var(--ink-950);
+}
+.gcard h3 {
+  margin-top: 22px;
+  font: 600 20px/27px var(--body);
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.gcard p {
+  margin-top: 12px;
+  font: 400 14px/21px var(--body);
+  color: var(--ink-400);
+}
+.growth .gcard-mock {
+  top: 44px;
+  width: min(280px, 74%);
+  margin-left: 0;
+  transform: translateX(-50%);
+}
+.gcard-select {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.gcard-select:focus-visible {
+  outline: 3px solid var(--violet-300);
+  outline-offset: 6px;
+  border-radius: inherit;
+}
+.gcard-select:hover {
+  box-shadow: inset 0 0 0 1px var(--white-20);
+}
+.growth-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 4;
+}
+.growth-controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 14px;
+  transition:
+    background 0.18s var(--ease),
+    color 0.18s var(--ease);
+}
+.growth-arrow,
+.growth-playback {
+  color: var(--white-80);
+  background: var(--white-5);
+}
+.growth-controls button:hover {
+  background: var(--white-20);
+  color: #fff;
+}
+.growth-dots {
+  display: flex;
+}
+.growth-dot {
+  position: relative;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: var(--white-20);
+  overflow: hidden;
+  transition: width 0.4s var(--ease);
+}
+.growth-dot.is-active {
+  width: 30px;
+  background: #9696ff33;
+}
+.growth-progress {
+  display: block;
+  height: 100%;
+  background: var(--violet-300);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: growth-progress linear both;
+}
+.growth-carousel[data-running='false'] .growth-progress {
+  animation-play-state: paused;
+}
+@keyframes growth-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+.growth-glow {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: -120px;
+  width: 1400px;
+  height: 520px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 40% 50% at 50% 60%, #6262fecc 0%, #6262fe00 70%),
+    radial-gradient(ellipse 60% 40% at 50% 70%, #381ac9aa 0%, #381ac900 70%);
+}
+@media (max-width: 809.98px) {
+  .growth {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .growth-stage {
+    height: 624px;
+  }
+  .gcard {
+    height: 560px;
+    padding: 8px;
+    border-radius: 44px;
+  }
+  .gcard-screen {
+    height: 54%;
+    border-radius: 36px 36px 24px 24px;
+  }
+  .gcard-body {
+    padding: 22px 18px 0;
+  }
+  .gcard h3 {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .gcard p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .gcard .icon-frame {
+    height: 40px;
+    width: 40px;
+    border-radius: 14px;
+  }
+  .growth .gcard-screen .gscr-note {
+    width: 112px;
+    left: 14px;
+    top: 18px;
+    padding: 10px 12px;
+  }
+  .growth .gcard-screen .gscr-note strong {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .growth-glow {
+    width: 900px;
+    height: 400px;
+  }
+}
+@media (prefers-reduced-motion: reduce) and (min-width: 810px) {
+  .growth-carousel * {
+    transition: none !important;
+  }
+  .growth-progress {
+    animation: none;
+    transform: scaleX(1);
+  }
+}
+
+/* Phones: a cleaner stack. Side cards shrink back, dim and drop their copy so
+   only the centred card reads; the stage is shorter to match. */
+@media (max-width: 809.98px) {
+  .growth-stage {
+    height: 560px;
+  }
+  .gcard {
+    height: 500px;
+  }
+  .gcard-screen {
+    height: 58%;
+  }
+  .gcard:not(.is-active) .gcard-body,
+  .gcard:not(.is-active) .gscr-note {
+    opacity: 0;
+    transition: opacity 0.3s var(--ease);
+  }
+  .gcard:not(.is-active) {
+    filter: brightness(0.7);
+  }
+  .gcard.is-active .gcard-body,
+  .gcard.is-active .gscr-note {
+    opacity: 1;
+    transition: opacity 0.4s var(--ease) 0.15s;
+  }
+}

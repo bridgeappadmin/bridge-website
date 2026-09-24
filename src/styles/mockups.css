@@ -1,0 +1,235 @@
+/* Shared SVG iPhone 16 Pro. Screen artwork stays vector at every size. */
+.mockup {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 2;
+  color: #f8f7fc;
+}
+
+.deal .phone-message {
+  animation: phone-message-in 0.6s var(--ease) both;
+}
+.deal .phone-message-1 {
+  animation-delay: 0.7s;
+}
+.deal .phone-message-2 {
+  animation-delay: 1s;
+}
+.deal .phone-message-3 {
+  animation-delay: 1.3s;
+}
+.deal .phone-message-4 {
+  animation-delay: 1.6s;
+}
+@keyframes phone-message-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero */
+
+/* Key features lavender card */
+.fcard-phones {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+}
+.fcard-phone {
+  position: absolute;
+  bottom: -26%;
+  width: 300px;
+  filter: drop-shadow(0 30px 60px #2b1f5c40);
+}
+.fcard-phone-a {
+  left: 8%;
+  transform: rotate(-9deg);
+}
+.fcard-phone-b {
+  right: 8%;
+  transform: rotate(7deg);
+  bottom: -18%;
+}
+.fcard-phones .wallet-balance {
+  left: 50%;
+  right: auto;
+  bottom: 40px;
+  width: 320px;
+  height: auto;
+  margin-left: -160px;
+  padding: 24px 28px;
+  border-radius: 28px;
+  background: #1d1a26d9;
+  box-shadow:
+    inset 0 1px 0 #ffffff1f,
+    0 24px 60px #00000059;
+}
+.fcard-phones .wallet-balance strong {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+/* Deals screens */
+.scr-mock {
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  width: 250px;
+  margin-left: -125px;
+  filter: drop-shadow(0 30px 60px #2b1f5c4d);
+}
+.scr-chat::before,
+.scr-chat::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 340px;
+  top: 120px;
+  border-radius: 60px;
+  background: #9c8bff;
+  opacity: 0.6;
+}
+.scr-brief::before,
+.scr-brief::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 140px;
+  height: 300px;
+  transform: translateY(-50%);
+  border-radius: 40px;
+  background: #d5d0ff;
+  opacity: 0.8;
+}
+.scr-brief .brief-paid {
+  right: 60px;
+  bottom: 110px;
+  background: #ffffffe6;
+  border-color: #fff;
+  color: var(--ink-800);
+}
+.scr-brief .brief-tag {
+  left: 60px;
+  top: 120px;
+}
+.scr-trust .trust-shield {
+  top: 20px;
+  left: 20%;
+  margin-left: 0;
+}
+.scr-trust .trust-alert-1 {
+  left: 30px;
+  top: 150px;
+}
+.scr-trust .trust-alert-2 {
+  right: 30px;
+  bottom: 60px;
+}
+
+/* Growth cards */
+.gcard-mock {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  width: 280px;
+  margin-left: -140px;
+  filter: drop-shadow(0 30px 60px #2b1f5c40);
+}
+.gcard-screen .gscr-note {
+  position: absolute;
+  left: 24px;
+  top: 30px;
+  width: 150px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffffcc;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--ink-800);
+  box-shadow: 0 16px 40px #2b1f5c1f;
+  transform: rotate(-6deg);
+}
+.gcard-screen .gscr-note small {
+  display: block;
+  font: 400 10px/12px var(--body);
+  color: var(--ink-500);
+}
+.gcard-screen .gscr-note strong {
+  display: block;
+  font: 500 30px/32px var(--body);
+  letter-spacing: -0.03em;
+}
+
+/* Integrations + CTA phones */
+.arc-phone-wrap .mockup,
+.cta-phone-wrap .mockup {
+  filter: drop-shadow(0 30px 60px #00000040);
+}
+
+@media (max-width: 809.98px) {
+  .fcard-phones {
+    min-height: 440px;
+  }
+  .fcard-phone {
+    width: 200px;
+    bottom: -30%;
+  }
+  .fcard-phone-a {
+    left: 2%;
+  }
+  .fcard-phone-b {
+    right: 2%;
+    bottom: -22%;
+  }
+  .fcard-phones .wallet-balance {
+    width: 240px;
+    margin-left: -120px;
+    padding: 18px 20px;
+    bottom: 24px;
+  }
+  .fcard-phones .wallet-balance strong {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .scr-mock {
+    width: 180px;
+    margin-left: -90px;
+    top: 24px;
+  }
+  .scr-brief .brief-paid {
+    right: 16px;
+    bottom: 60px;
+  }
+  .scr-brief .brief-tag {
+    left: 12px;
+    top: 80px;
+  }
+  .scr-trust .trust-alert-1 {
+    left: 12px;
+    top: 90px;
+  }
+  .scr-trust .trust-alert-2 {
+    right: 12px;
+    bottom: 30px;
+  }
+  .gcard-mock {
+    width: 220px;
+    margin-left: -110px;
+    top: 36px;
+  }
+  .gcard-screen .gscr-note {
+    width: 130px;
+    padding: 10px 12px;
+  }
+  .gcard-screen .gscr-note strong {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}

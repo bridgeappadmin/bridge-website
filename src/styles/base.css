@@ -1,0 +1,450 @@
+@font-face {
+  font-family: Urbanist;
+  src: url('/fonts/urbanist-extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: Urbanist;
+  src: url('/fonts/urbanist-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --ink-950: #121214;
+  --ink-900: #1b1b1f;
+  --ink-800: #212124;
+  --ink-700: #292929;
+  --ink-500: #525252;
+  --ink-400: #8f8f8f;
+  --ink-200: #d9d9d9;
+  --ink-100: #efefef;
+  --ink-50: #f5f5f5;
+  --white: #fff;
+  --violet-900: #28119c;
+  --violet-800: #381ac9;
+  --violet-500: #6262fe;
+  --violet-300: #9696ff;
+  --violet-200: #bebeff;
+  --green: #009c68;
+  --white-80: #ffffffcc;
+  --white-60: #ffffff99;
+  --white-20: #ffffff33;
+  --white-5: #ffffff0d;
+  --display: 'Roboto Condensed Variable', Impact, 'Arial Narrow', sans-serif;
+  --body: 'Geist Variable', Inter, system-ui, sans-serif;
+  --mono: 'Fragment Mono', ui-monospace, monospace;
+  --gutter: 48px;
+  --content: 1344px;
+  --ease: cubic-bezier(0.44, 0, 0.56, 1);
+  --sheet-radius: 80px;
+  color-scheme: light;
+}
+@media (max-width: 1199.98px) {
+  :root {
+    --gutter: 32px;
+    --sheet-radius: 56px;
+  }
+}
+@media (max-width: 809.98px) {
+  :root {
+    --gutter: 16px;
+    --sheet-radius: 40px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--ink-950);
+  color: var(--white);
+  font: 400 16px/24px var(--body);
+  letter-spacing: -0.02em;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+main,
+.footer {
+  display: block;
+  overflow-x: clip;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button {
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 3px solid var(--violet-300);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+::selection {
+  background: var(--violet-200);
+  color: var(--violet-900);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 22px;
+  font: 600 16px/24px var(--body);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.btn > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 20px;
+  transition: filter 0.18s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:hover > span {
+  filter: brightness(1.06);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-primary {
+  color: var(--white);
+  background: linear-gradient(#6d55e2, #28119c);
+  box-shadow:
+    0 1px 2px #28109f5e,
+    0 3px 3px #28109f52,
+    0 8px 5px #28109f30,
+    0 13px 5px #28109f0f;
+}
+.btn-primary > span {
+  background: linear-gradient(#6262fe, #381ac9);
+  box-shadow:
+    inset 0 1px 1px #fff,
+    inset 0 -2px 2px #28109b,
+    inset 0 0 8px #cbc4ea80;
+}
+.btn-secondary {
+  color: var(--white);
+  background: linear-gradient(#282828, #060606);
+  box-shadow:
+    0 1px 2px #0000005e,
+    0 3px 3px #00000052,
+    0 7px 4px #00000030,
+    0 12px 5px #0000000f;
+}
+.btn-secondary > span {
+  background: #282828;
+  box-shadow:
+    inset 0 1px 1px #fffc,
+    inset 0 -2px 2px #000;
+}
+.btn-tertiary {
+  color: var(--ink-800);
+  background: linear-gradient(#e0e0e033, #e0e0e066);
+  box-shadow:
+    0 10px 4px #c2c2c208,
+    0 6px 3px #c2c2c21c,
+    0 2px 2px #c2c2c230,
+    0 1px 1px #c2c2c238;
+}
+.btn-tertiary > span {
+  background: var(--white);
+  box-shadow: inset 0 -2px 1px #1a143340;
+  padding: 12px 20px 14px;
+}
+.btn-store {
+  color: var(--white);
+  background: #0000001a;
+  padding: 4px;
+  border-radius: 24px;
+}
+.btn-store > span {
+  background: #0c0c0c;
+  box-shadow:
+    inset 0 0 1px #ffffff80,
+    inset 0 -4px 1px #00000080;
+  gap: 12px;
+  padding: 12px 24px;
+  text-align: left;
+}
+.store-text {
+  display: flex;
+  flex-direction: column;
+}
+.store-text small {
+  font: 400 12px/18px var(--body);
+  letter-spacing: -0.05em;
+}
+.store-text strong {
+  font: 500 24px/28px var(--body);
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Layout ---------- */
+.section {
+  position: relative;
+  padding: 120px var(--gutter);
+  max-width: calc(var(--content) + var(--gutter) * 2);
+  margin: 0 auto;
+}
+.section-head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto 72px;
+}
+.h2 {
+  font: 900 clamp(44px, 5vw, 72px) / 1 var(--display);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  color: var(--ink-950);
+}
+.on-dark {
+  color: var(--white);
+}
+.h3-lg {
+  font: 600 clamp(28px, 3vw, 40px) / 1.15 var(--body);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.lead {
+  font: 400 18px/27px var(--body);
+  letter-spacing: -0.01em;
+  color: var(--ink-800);
+  max-width: 560px;
+  margin: 24px auto 0;
+  text-wrap: pretty;
+}
+.lead-wide {
+  max-width: 700px;
+}
+.dark-block .lead,
+.faq .lead,
+.testi-head .lead {
+  color: var(--white-80);
+}
+.eyebrow {
+  display: block;
+  font: 900 14px/16.8px var(--display);
+  text-transform: uppercase;
+  color: var(--violet-300);
+  margin-bottom: 16px;
+}
+.bt-line {
+  display: block;
+}
+.bt-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.bt-ch {
+  display: inline-block;
+  will-change: filter, transform, opacity;
+}
+
+/* ---------- Section tag ---------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font: 900 14px/14px var(--display);
+  text-transform: uppercase;
+}
+.tag-num {
+  display: inline-block;
+  padding: 8px 8px;
+  border-radius: 8px;
+  background: var(--ink-100);
+  color: var(--ink-500);
+  transform: rotate(-17deg);
+  position: relative;
+  z-index: 1;
+}
+.tag-name {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--ink-500);
+  color: var(--ink-200);
+  margin-left: -4px;
+  transform: rotate(9deg);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Sheets ---------- */
+.sheet {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+.sheet-light {
+  background: var(--white);
+  color: var(--ink-800);
+  border-radius: var(--sheet-radius);
+}
+.sheet-first {
+  margin-top: -72px;
+  border-radius: 100px 100px var(--sheet-radius) var(--sheet-radius);
+}
+.dark-block {
+  position: relative;
+  color: var(--white);
+}
+.icon-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: var(--white-5);
+  box-shadow: inset 0 0 6.67px #4747471a;
+  color: var(--white);
+}
+.icon-frame-lg {
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10.67px #4747471a;
+}
+.icon-frame.is-active,
+.gcard-center .icon-frame {
+  background: var(--violet-800);
+}
+
+@media (max-width: 1199.98px) {
+  .section {
+    padding: 96px var(--gutter);
+  }
+  .sheet-first {
+    border-radius: 72px 72px var(--sheet-radius) var(--sheet-radius);
+  }
+}
+@media (max-width: 809.98px) {
+  .section {
+    padding: 80px var(--gutter);
+  }
+  .section-head {
+    margin-bottom: 48px;
+  }
+  .lead {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  .sheet-first {
+    margin-top: -48px;
+    border-radius: 48px 48px var(--sheet-radius) var(--sheet-radius);
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .btn > span {
+    padding: 11px 20px;
+  }
+  .btn-store > span {
+    padding: 10px 18px;
+  }
+  .store-text strong {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (min-width: 810px) {
+  html {
+    scroll-behavior: auto;
+  }
+  .ticker-track,
+  .perf-track,
+  .story-ticker-track,
+  .faces-track {
+    animation: none !important;
+  }
+  .btn,
+  .btn > span,
+  .nav-menu a {
+    transition: none !important;
+  }
+}
+
+/* Store buttons before launch: "Coming soon" badge, not clickable. */
+.btn-store.is-soon {
+  position: relative;
+  cursor: default;
+}
+.btn-store.is-soon::after {
+  content: 'Coming soon';
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #8a73ff, #5b3fe0);
+  color: #fff;
+  font: 600 11px/14px var(--body);
+  letter-spacing: 0.02em;
+  box-shadow: 0 6px 14px #5b3fe066;
+}

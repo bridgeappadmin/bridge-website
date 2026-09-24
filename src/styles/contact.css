@@ -1,0 +1,120 @@
+.contact {
+  padding-bottom: 120px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 720px;
+  gap: 64px;
+  align-items: start;
+}
+.contact-copy {
+  display: flex;
+  flex-direction: column;
+  min-height: 640px;
+  color: var(--ink-950);
+}
+.contact-title {
+  font-size: clamp(32px, 3.3vw, 48px);
+  text-align: left;
+}
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+  margin-top: auto;
+  padding-top: 64px;
+}
+.info:first-child {
+  grid-column: 1 / -1;
+}
+.info h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 24px/30px var(--body);
+  letter-spacing: -0.02em;
+}
+.info p {
+  margin-top: 6px;
+  font: 400 18px/27px var(--body);
+  color: var(--ink-800);
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 16px;
+  padding: 40px;
+  border-radius: 48px;
+  background: var(--ink-50);
+  color: var(--ink-950);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field-full {
+  grid-column: 1 / -1;
+}
+.field label {
+  font: 600 16px/24px var(--body);
+}
+.field label i {
+  font-style: normal;
+  color: #ff4d4d;
+}
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 18px 24px;
+  border: 0;
+  border-radius: 20px;
+  background: #fff;
+  color: var(--ink-950);
+  font: 400 16px/24px var(--body);
+  resize: vertical;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--ink-400);
+}
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: 3px solid var(--violet-300);
+  outline-offset: 0;
+}
+.contact-submit {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .contact-copy {
+    min-height: 0;
+  }
+  .contact-info {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 809.98px) {
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+    border-radius: 32px;
+  }
+  .field {
+    grid-column: 1 / -1;
+  }
+}

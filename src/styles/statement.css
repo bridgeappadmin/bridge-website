@@ -1,0 +1,203 @@
+.statement {
+  position: relative;
+  height: 300vh;
+}
+.statement-pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--gutter);
+  overflow: hidden;
+}
+.statement-text {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  text-align: center;
+  font: 400 56px/86px var(--body);
+  letter-spacing: -0.03em;
+  color: var(--ink-200);
+}
+.st-word {
+  display: inline;
+}
+.st-pill {
+  opacity: var(--st-o, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  vertical-align: middle;
+  height: 84px;
+  margin: 0 6px 0 2px;
+  padding: 0 32px;
+  border-radius: 28px;
+  background: var(--white);
+  color: var(--ink-800);
+  font: 500 24px/36px var(--body);
+  letter-spacing: -0.01em;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow:
+    inset 0 2px 2px #fff,
+    inset 0 0 40px #0000001f;
+  will-change: transform, opacity;
+}
+.st-pill.is-dark {
+  background: var(--ink-950);
+  color: var(--white);
+  box-shadow:
+    inset 0 2px 2px #ffffff40,
+    inset 0 0 40px #ffffff33;
+  padding-right: 10px;
+}
+.st-pill-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: var(--violet-500);
+  color: #fff;
+  box-shadow: inset 0 0 10.67px #4747471a;
+  transform: rotate(8deg);
+}
+.st-tile {
+  opacity: var(--st-o, 1);
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: var(--violet-500);
+  color: #fff;
+  box-shadow: inset 0 0 10.67px #4747471a;
+  will-change: transform;
+}
+.st-tile-1 {
+  left: 19%;
+  top: 74%;
+}
+.st-tile-2 {
+  right: 15%;
+  top: 80%;
+}
+.st-tile-3 {
+  left: 22%;
+  top: 18%;
+}
+.st-tile-4 {
+  right: 27%;
+  top: 13%;
+}
+.st-tile-5 {
+  right: 11%;
+  top: 44%;
+}
+.st-tile-6 {
+  left: 7%;
+  top: 44%;
+}
+.st-tile-coin {
+  background: none;
+  box-shadow: none;
+  border-radius: 50%;
+}
+.st-tile-coin img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 12px 18px #5b3fe040);
+}
+
+@media (max-width: 1199.98px) {
+  .statement-text {
+    font-size: 44px;
+    line-height: 70px;
+  }
+  .st-pill {
+    height: 68px;
+    padding: 0 24px;
+    font-size: 20px;
+    border-radius: 22px;
+  }
+  .st-pill-tile {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+  }
+  .st-tile {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 809.98px) {
+  .statement {
+    height: 220vh;
+  }
+  .statement-text {
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+  }
+  .st-pill {
+    height: 46px;
+    padding: 0 16px;
+    gap: 8px;
+    font-size: 16px;
+    border-radius: 16px;
+    margin: 0 4px 0 0;
+  }
+  .st-pill.is-dark {
+    padding-right: 6px;
+  }
+  .st-pill-tile {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+  .st-pill-tile svg {
+    width: 16px;
+    height: 16px;
+  }
+  /* All six tiles stay on phones, smaller and around the text. Sizes use
+     !important because the tiles carry their desktop size inline. */
+  .st-tile {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 16px;
+  }
+  .st-tile svg {
+    width: 22px;
+    height: 22px;
+  }
+  .st-tile-coin {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .st-tile-1 {
+    left: 6%;
+    top: 84%;
+  }
+  .st-tile-2 {
+    right: 30%;
+    top: 90%;
+  }
+  .st-tile-3 {
+    left: 8%;
+    top: 15%;
+  }
+  .st-tile-4 {
+    right: 8%;
+    top: 17%;
+  }
+  .st-tile-5 {
+    right: 6%;
+    top: 82%;
+  }
+  .st-tile-6 {
+    left: 42%;
+    top: 12%;
+  }
+}

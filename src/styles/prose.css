@@ -1,0 +1,120 @@
+/* Long-form text: articles, job posts, changelog, legal. */
+.prose {
+  color: var(--ink-800);
+  font: 400 18px/27px var(--body);
+  letter-spacing: -0.01em;
+}
+.prose p + p {
+  margin-top: 8px;
+}
+.prose-intro {
+  font-size: 18px;
+  line-height: 27px;
+}
+.prose-section {
+  margin-top: 56px;
+  scroll-margin-top: 120px;
+}
+.prose-section .prose-section {
+  margin-top: 32px;
+}
+.prose-h {
+  margin-bottom: 20px;
+  font: 900 clamp(32px, 3.4vw, 48px) / 1.05 var(--display);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--ink-950);
+  text-wrap: balance;
+}
+.prose-h3 {
+  margin: 0 0 12px;
+  font: 500 22px/30px var(--body);
+  letter-spacing: -0.02em;
+  color: var(--ink-950);
+}
+.prose-strong {
+  margin-top: 8px;
+  font-weight: 700;
+  color: var(--ink-950);
+}
+.prose-list {
+  margin: 4px 0 8px;
+  padding-left: 24px;
+  list-style: disc;
+}
+.prose-list li {
+  padding-left: 4px;
+}
+.prose-list li + li {
+  margin-top: 2px;
+}
+.prose-note {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--ink-500);
+}
+.prose-tip {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-top: 24px;
+  padding: 24px 32px;
+  border-radius: 24px;
+  background: var(--ink-50);
+  color: var(--ink-400);
+}
+.prose-tip strong {
+  display: block;
+  font: 700 16px/24px var(--body);
+  color: var(--ink-950);
+}
+.prose-tip p {
+  margin-top: 2px;
+  font: 400 16px/24px var(--body);
+  color: var(--ink-500);
+}
+.prose a {
+  color: var(--violet-500);
+}
+.prose a:hover {
+  text-decoration: underline;
+}
+
+/* Changelog */
+.release + .release {
+  margin-top: 64px;
+}
+.release-date {
+  display: block;
+  font: 900 16px/20px var(--display);
+  text-transform: uppercase;
+  color: var(--violet-500);
+}
+.release-version {
+  margin: 12px 0 20px;
+  font: 900 48px/1 var(--display);
+  letter-spacing: -0.03em;
+  color: var(--ink-950);
+}
+.release .prose-strong {
+  margin-top: 20px;
+}
+
+@media (max-width: 809.98px) {
+  .prose {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .prose-section {
+    margin-top: 40px;
+  }
+  .prose-tip {
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+    padding: 18px 20px;
+  }
+  .release-version {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,225 @@
+.perf {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.perf-text {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}
+.perf-track {
+  display: flex;
+  width: max-content;
+  font: 900 224px/240px var(--display);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--ink-900);
+  animation: ticker 48s linear infinite;
+  will-change: transform;
+}
+.perf-track span {
+  white-space: nowrap;
+  padding-right: 0.35em;
+}
+.perf-glass-wrap {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.perf-glass {
+  position: absolute;
+  top: calc(50% - 58px);
+  width: 720px;
+  height: 480px;
+  border-radius: 80px;
+  background: linear-gradient(180deg, #ffffff00 0%, #bebeff 100%);
+  box-shadow:
+    inset 0 -0.78px 0.78px -0.6px #ffffff6b,
+    inset 0 -1.9px 1.9px -1.2px #ffffff69,
+    inset 0 -3.6px 3.6px -1.8px #ffffff63,
+    inset 0 -6.35px 6.35px -2.4px #ffffff5e,
+    inset 0 -11px 11px -3px #ffffff54,
+    inset 0 -20px 20px -3.6px #ffffff40,
+    inset 0 -40px 40px -4.25px #ffffff14;
+}
+.perf-cards {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 220px;
+}
+.perf-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.ncard {
+  position: sticky;
+  width: 484px;
+  padding: 40px 48px 44px;
+  border-radius: 48px;
+  background: #fff;
+  color: var(--ink-950);
+  box-shadow:
+    0 4px 8px #0807310f,
+    0 14px 14px #0807310d;
+}
+.ncard-index {
+  position: absolute;
+  top: 40px;
+  right: 48px;
+  font: 400 14px/21px var(--body);
+  color: var(--ink-500);
+}
+.ncard strong {
+  display: block;
+  font: 400 56px/67px var(--body);
+  letter-spacing: -0.03em;
+}
+.ncard-label {
+  display: block;
+  font: 500 20px/30px var(--body);
+  letter-spacing: -0.02em;
+}
+.ncard p {
+  margin-top: 80px;
+  font: 400 16px/24px var(--body);
+  letter-spacing: -0.02em;
+  color: var(--ink-500);
+  max-width: 400px;
+}
+.ncard-1 {
+  top: 50px;
+  transform: rotate(-3deg);
+  background: linear-gradient(160deg, #c9c5ff 0%, #fff 72%);
+}
+.ncard-2 {
+  top: 100px;
+  width: 504px;
+  transform: rotate(7deg);
+  background: linear-gradient(160deg, #6f9cff 0%, #fff 78%);
+}
+.ncard-3 {
+  top: 50px;
+  width: 508px;
+  margin-top: -20px;
+  transform: rotate(-8deg);
+  background: linear-gradient(160deg, #ffa6f6 0%, #bebeff 82%);
+}
+
+@media (max-width: 1199.98px) {
+  .perf-track {
+    font-size: 160px;
+    line-height: 172px;
+  }
+  .perf-glass {
+    width: 560px;
+    height: 380px;
+  }
+}
+@media (max-width: 809.98px) {
+  .perf-text {
+    height: 70vh;
+  }
+  .perf-glass-wrap {
+    height: 70vh;
+  }
+  .perf-track {
+    font-size: 96px;
+    line-height: 104px;
+  }
+  .perf-glass {
+    top: calc(50% - 40px);
+    width: 86vw;
+    height: 260px;
+    border-radius: 48px;
+  }
+  .perf-cards {
+    padding: 0 var(--gutter) 30svh;
+  }
+  .perf-col {
+    gap: 24px;
+  }
+  .ncard,
+  .ncard-2,
+  .ncard-3 {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px 28px 30px;
+    border-radius: 36px;
+    margin-top: 0;
+  }
+  /* Cards pin around the vertical centre of the screen and stack there
+     (each ~290px tall; small offsets keep the pile readable). */
+  .ncard-1 {
+    top: calc(50svh - 160px);
+    transform: rotate(-2deg);
+  }
+  .ncard-2 {
+    top: calc(50svh - 145px);
+    transform: rotate(3deg);
+  }
+  .ncard-3 {
+    top: calc(50svh - 130px);
+    transform: rotate(-3deg);
+  }
+  .ncard-index {
+    top: 28px;
+    right: 28px;
+  }
+  .ncard strong {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  .ncard p {
+    margin-top: 40px;
+    font-size: 15px;
+  }
+}
+
+/* Exact card treatment from the reference: grainy gradient backgrounds with a white edge. */
+.ncard {
+  border: 2px solid #ffffffd9;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.ncard-1 {
+  background-image: url('/images/ref/card-1.png');
+}
+.ncard-2 {
+  background-image: url('/images/ref/card-2.png');
+}
+.ncard-3 {
+  background-image: url('/images/ref/card-3.png');
+}
+.perf-glass {
+  background: linear-gradient(
+    180deg,
+    #ffffff00 0%,
+    #ffffffe6 38%,
+    #c8c8ff 75%,
+    #b1b1ff 100%
+  );
+}

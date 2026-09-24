@@ -1,0 +1,205 @@
+/* Download / CTA. Geometry copied from the reference at 1440px: a 614x400
+   stage holding (1) the gradient heading, (2) a rounded clip with the phone
+   and a violet fade, (3) the social tiles. The stage scales down via --s. */
+.cta {
+  padding-top: 328px;
+  padding-bottom: 328px;
+  text-align: center;
+  overflow: hidden;
+}
+.cta-stage-outer {
+  position: relative;
+}
+.cta-stage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 614px;
+  height: 400px;
+  margin-left: -307px;
+  transform: scale(var(--s, 1));
+  transform-origin: top center;
+}
+
+/* Layer 1: heading */
+.cta-title {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  font: 900 128px/128px var(--display);
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.cta-title .bt-line {
+  display: flex;
+  justify-content: center;
+  will-change: transform;
+}
+.cta-title .bt-ch {
+  background-image: linear-gradient(0deg, #fff 0%, #bebeff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Layer 2: rounded clip with phone + fade */
+.cta-panel {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border-radius: 80px;
+  overflow: clip;
+  will-change: transform;
+}
+.cta-phone {
+  position: absolute;
+  top: 125px;
+  left: 138px;
+  width: 338px;
+  height: 681px;
+  will-change: transform;
+}
+.cta-phone > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Tazmify mark on the phone screen, without the reference coin disc. */
+.cta-coin {
+  position: absolute;
+  top: 112px;
+  left: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 130px;
+}
+.cta-coin img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+.cta-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 218px;
+  background: linear-gradient(#3313d400 0%, #5121b480 50%, #5121b4 100%);
+}
+
+/* Layer 3: social tiles */
+.cta-icons {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+.cta-social {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  color: #fff;
+  box-shadow:
+    inset 0 1px 0 #ffffff33,
+    0 20px 40px #00000059;
+}
+.cta-social-yt {
+  left: 42px;
+  top: 76px;
+  background: linear-gradient(#ff000033, #ff0000);
+}
+.cta-social-in {
+  left: 461px;
+  top: -9px;
+  background: linear-gradient(#007ab933, #007ab9);
+}
+.cta-social-fb {
+  left: 107px;
+  top: 205px;
+  background: linear-gradient(#1877f233, #1877f2);
+}
+.cta-social-x {
+  left: 382px;
+  top: 158px;
+  background: linear-gradient(#14141433, #141414);
+  box-shadow:
+    inset 0 0 0 1px #ffffff26,
+    0 20px 40px #00000059;
+}
+.cta-social-ig {
+  left: 458px;
+  top: 364px;
+  background: linear-gradient(222deg, #9c27b033 0%, #ff3b418a 42.9%, #ffc107 100%);
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 64px;
+}
+
+@media (max-width: 1199.98px) {
+  .cta {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 809.98px) {
+  .cta {
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+  /* Phones: a 460px content zone (stage x 77–537) instead of the full 614px
+     panel, so the stage scales to ~0.78 at 390px. Line height stays 128px so
+     the lines still interleave with the panel. */
+  .cta-title {
+    font-size: 78px;
+  }
+  .cta-panel {
+    inset: 0 77px;
+    border-radius: 64px;
+  }
+  .cta-phone {
+    left: 61px;
+  }
+  .cta-social-yt {
+    left: 70px;
+  }
+  .cta-social-in {
+    left: 468px;
+  }
+  .cta-social-fb {
+    left: 96px;
+  }
+  .cta-social-x {
+    left: 402px;
+  }
+  .cta-social-ig {
+    left: 470px;
+  }
+  .cta-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+  }
+  .cta-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+  .cta-actions .btn > span {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
