@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- Source for public/og-image.jpg (1200x630 share card). Render with
+     scripts/make-og-image.mjs. Not part of the site build. -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @font-face {
+        font-family: Display;
+        src: url('../node_modules/@fontsource-variable/roboto-condensed/files/roboto-condensed-latin-wght-normal.woff2')
+          format('woff2');
+        font-weight: 100 900;
+      }
+      @font-face {
+        font-family: Body;
+        src: url('../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2')
+          format('woff2');
+        font-weight: 100 900;
+      }
+      @font-face {
+        font-family: Wordmark;
+        src: url('../public/fonts/urbanist-extrabold.ttf');
+        font-weight: 800;
+      }
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        padding: 64px 72px;
+        background:
+          radial-gradient(ellipse 60% 70% at 85% 30%, #b6a8ff 0%, #b6a8ff00 70%),
+          radial-gradient(ellipse 70% 60% at 10% 100%, #3a1ccc 0%, #3a1ccc00 70%),
+          linear-gradient(160deg, #6d57fc 0%, #4b33e0 55%, #28119c 100%);
+        color: #fff;
+        font-family: Body, sans-serif;
+        overflow: hidden;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .brand img {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px #1c0f6e66;
+      }
+      .brand span {
+        font: 800 40px/1 Wordmark, sans-serif;
+        letter-spacing: -0.02em;
+      }
+      h1 {
+        margin-top: 64px;
+        font: 900 108px/0.92 Display, sans-serif;
+        letter-spacing: -0.045em;
+        text-transform: uppercase;
+      }
+      h1 em {
+        font-style: normal;
+        color: #d9d2ff;
+      }
+      p {
+        margin-top: 28px;
+        max-width: 560px;
+        font: 400 28px/1.35 Body, sans-serif;
+        color: #ece9ff;
+      }
+      .url {
+        position: absolute;
+        left: 72px;
+        bottom: 56px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        background: #ffffff26;
+        font: 600 22px/1 Body, sans-serif;
+      }
+      .phone {
+        position: absolute;
+        right: 40px;
+        top: 70px;
+        width: 330px;
+        transform: rotate(7deg);
+        filter: drop-shadow(0 30px 50px #14094f80);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="brand">
+        <img src="../public/app-icon.svg" alt="" />
+        <span>Tazmify</span>
+      </div>
+      <h1>Better work.<br /><em>Together.</em></h1>
+      <p>Where creators and brands discover, pitch and collaborate on campaigns.</p>
+      <span class="url">tazmify.com</span>
+      <img class="phone" src="../public/images/mockups/role-select-gold.webp" alt="" />
+    </div>
+  </body>
+</html>
