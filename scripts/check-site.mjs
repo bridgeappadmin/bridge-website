@@ -157,10 +157,15 @@ try {
 
   const prices = page.locator('.plan-price strong');
   await prices.first().scrollIntoViewIfNeeded();
-  assert.deepEqual(
-    (await prices.allInnerTexts()).map((t) => t.replace(/\s/g, '')),
-    ['₹99', '₹249', '₹699'],
-    'Pricing should list the three Connects packs from the app',
+  // Connects show "Coming soon" until CONNECTS_LIVE is turned on
+  // (src/config/launch.js); then the three app prices must appear.
+  const priceTexts = (await prices.allInnerTexts()).map((t) =>
+    t.replace(/\s/g, ''),
+  );
+  assert.ok(
+    JSON.stringify(priceTexts) === JSON.stringify(['₹99', '₹249', '₹699']) ||
+      priceTexts.every((t) => /comingsoon/i.test(t)),
+    'Pricing shows the three Connects packs, or Coming soon before launch',
   );
 
   const faq = page.locator('.faq-item').nth(1);

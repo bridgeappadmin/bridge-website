@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Minus, Plus } from 'lucide-react';
 import { BlurText, Reveal, SectionTag } from '../motion.jsx';
+import { CONNECTS_LIVE } from '../config/launch.js';
 
 const FAQS = [
   [
@@ -15,7 +16,9 @@ const FAQS = [
   ],
   [
     'Does it cost anything to join as a creator?',
-    'Joining is free, and every account gets 10 free connects each month. Each application uses 2 connects. When you need more, top up in the app from ₹99 for 10 connects.',
+    CONNECTS_LIVE
+      ? 'Joining is free, and every account gets 10 free connects each month. Each application uses 2 connects. When you need more, top up in the app from ₹99 for 10 connects.'
+      : 'Joining Tazmify is free. Connects, the credits used to apply to campaigns, are coming soon, and we will share pricing before they launch.',
   ],
   [
     'What makes Tazmify different from other creator platforms?',

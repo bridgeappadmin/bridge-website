@@ -4,6 +4,7 @@ import Pricing from '../sections/Pricing.jsx';
 import PlanCompare from '../sections/PlanCompare.jsx';
 import Faq from '../sections/Faq.jsx';
 import Download from '../sections/Download.jsx';
+import { CONNECTS_LIVE } from '../config/launch.js';
 
 export default function PricingPage() {
   return (
@@ -13,8 +14,8 @@ export default function PricingPage() {
         <Pricing number="01" />
       </div>
       <div className="dark-block">
-        <PlanCompare number="02" />
-        <Faq number="03" />
+        {CONNECTS_LIVE && <PlanCompare number="02" />}
+        <Faq number={CONNECTS_LIVE ? '03' : '02'} />
         <Download />
       </div>
     </>

@@ -79,7 +79,10 @@ export default function Footer() {
         <span>
           <Sparkles size={14} /> Made for making things happen
         </span>
-        <span>© Tazmify {new Date().getFullYear()}. All rights reserved.</span>
+        <span>
+          © {new Date().getFullYear()} Hiranyasaga Techsolutions Private
+          Limited. All rights reserved.
+        </span>
         <span>Creators × Brands</span>
       </div>
     </footer>
