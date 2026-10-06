@@ -7,12 +7,33 @@ export const slugify = (text) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
 
+// Turns email addresses and web addresses inside plain text into links.
+const LINK_RE = /([\w.+-]+@[\w-]+\.[\w.]+|https?:\/\/[^\s,;)]+)/g;
+export function linkify(text) {
+  if (typeof text !== 'string') return text;
+  return text.split(LINK_RE).map((part, i) => {
+    if (i % 2 === 0) return part;
+    const clean = part.replace(/[.]+$/, '');
+    const tail = part.slice(clean.length);
+    const href = clean.includes('@') && !clean.startsWith('http') ? `mailto:${clean}` : clean;
+    const external = href.startsWith('http') && !href.includes('tazmify.com');
+    return (
+      <React.Fragment key={i}>
+        <a href={href} {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+          {clean}
+        </a>
+        {tail}
+      </React.Fragment>
+    );
+  });
+}
+
 export function Bullets({ items }) {
   if (!items?.length) return null;
   return (
     <ul className="prose-list">
       {items.map((item) => (
-        <li key={item}>{item}</li>
+        <li key={typeof item === 'string' ? item : undefined}>{linkify(item)}</li>
       ))}
     </ul>
   );
@@ -30,8 +51,19 @@ export function ProseSection({ section, level = 'h2' }) {
       )}
       {section.title && <h3 className="prose-h3">{section.title}</h3>}
       {section.paragraphs?.map((p, i) => (
-        <p key={i}>{p}</p>
+        <p key={i}>{linkify(p)}</p>
       ))}
+      {section.blocks?.map((b, i) =>
+        b.type === 'h3' ? (
+          <h3 className="prose-h3" key={i}>
+            {b.text}
+          </h3>
+        ) : b.type === 'ul' ? (
+          <Bullets key={i} items={b.items} />
+        ) : (
+          <p key={i}>{linkify(b.text)}</p>
+        ),
+      )}
       {section.strong && <p className="prose-strong">{section.strong}</p>}
       <Bullets items={section.bullets} />
       {section.strong2 && <p className="prose-strong">{section.strong2}</p>}

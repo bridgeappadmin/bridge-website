@@ -103,7 +103,7 @@ Run `npm run check:phones` to check the nine screens, image demos, clipping IDs,
 - Branding: `public/logo-mark.svg` and the Urbanist wordmark come from the Tazmify app. The nav shows the white mark on the hero and the coloured mark once it collapses. Display type is Roboto Condensed 900, body type is Geist, both via `@fontsource-variable`.
 - Photography and mascots come from the app (`public/images/`).
 - The benefit-card visuals, three number-card gradient backgrounds, aurora glow and four restored hero cards (`public/images/ref/`) are reference-template assets. The old hero phone, glow and texture remain archived there.
-- Placeholders to replace before launch: the numbers in the results cards, testimonial names and quotes, blog posts, job listings, team names and photos, office address, the legal copy (have counsel review), and all plan prices. Store buttons point at the download section until real store URLs exist. The contact and subscribe forms only show a confirmation state; wire them to a backend or form service.
+- Placeholders to replace before launch: the numbers in the results cards, testimonial names and quotes, blog posts, team names and photos, office address, the legal copy (have counsel review), and all plan prices. Store buttons point at the download section until real store URLs exist. The contact and subscribe forms only show a confirmation state; wire them to a backend or form service.
 - The download section's phone artwork (`public/images/ref/cta-phone.webp`) is also the reference template's; the coin over it is rendered in CSS with the Tazmify mark.
 
 ### Blog cover photos

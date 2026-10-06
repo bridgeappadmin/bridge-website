@@ -1,0 +1,717 @@
+{
+  "privacy": {
+    "intro": [
+      "This Privacy Policy explains how Hiranyasaga Techsolutions Private Limited (“Company”, “we”, “us” or “our”) collects, uses, discloses, stores, protects and otherwise processes personal data in connection with Tazmify, including the Tazmify mobile application and website (collectively, the “Platform”)."
+    ],
+    "sections": [
+      {
+        "heading": "1. Who We Are",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tazmify is a marketplace and collaboration platform through which brands and creators can discover one another, create or apply to influencer campaigns, communicate, exchange campaign materials, manage campaign activity and, where enabled, manage payments and payouts."
+          },
+          {
+            "type": "p",
+            "text": "The Platform is operated by Hiranyasaga Techsolutions Private Limited, Building No. Ep-9/198, Eranholi, Kannur Thalassery, Kerala 670107, India."
+          },
+          {
+            "type": "p",
+            "text": "For privacy-related questions, requests or complaints, please contact: contact@tazmify.com."
+          }
+        ]
+      },
+      {
+        "heading": "2. Scope of This Policy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This Policy applies to personal data processed through the Tazmify Android application, the Tazmify website and related Platform features. It applies to both brands and creators and to visitors who interact with the Platform."
+          },
+          {
+            "type": "p",
+            "text": "This Policy should be read together with Tazmify’s Terms of Use and any feature-specific notices or consent screens presented in the Platform."
+          }
+        ]
+      },
+      {
+        "heading": "3. Data We Collect",
+        "blocks": [
+          {
+            "type": "h3",
+            "text": "3.1 Information you provide directly"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Account and contact information, such as name, email address, mobile number, login credentials or authentication information and account identifiers.",
+              "Profile information, including profile photograph, biography, professional information, creator category/niche, location, portfolio, social-media identifiers or links, audience information, engagement information, rate card and other information you choose to publish.",
+              "Brand and campaign information, including campaign title, brief, niche, budget, deliverables, timeline, location, eligibility requirements, applications, shortlists, campaign status and related instructions.",
+              "Verification or KYC information, where a verification feature is used, including information reasonably required to verify an account or transaction.",
+              "Communication and user-content data, including messages, images, videos, documents, campaign materials, reviews, ratings, comments and other content submitted through the Platform.",
+              "Payment, billing and payout information, where payment or payout features are used, including transaction-related information and information required to process or reconcile payments. Payment credentials may be handled by third-party payment service providers rather than stored directly by Tazmify.",
+              "Information relating to Connects, credits, subscriptions, premium campaigns or other paid Platform features, where such features are enabled.",
+              "Information you provide when contacting customer support, reporting an issue or making a privacy or grievance request."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "3.2 Information collected automatically"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Device and technical information, such as device model, operating system, app version, browser type, IP address, device identifiers where permitted, language, time zone and diagnostic information.",
+              "Usage information, such as pages or screens viewed, features used, searches, campaign interactions, clicks, session information and error logs.",
+              "Location information, including approximate or precise location where the relevant feature is enabled and the user grants the required permission. Location may be used for proximity-based discovery, matching, campaign eligibility and related Platform functionality.",
+              "Cookies, SDK-generated information and similar technologies used for authentication, security, analytics, preferences and Platform functionality, where applicable."
+            ]
+          },
+          {
+            "type": "h3",
+            "text": "3.3 Information received from other sources"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Information from another Platform user, for example when a brand or creator submits an application, review, campaign invitation or communication involving you.",
+              "Information from integrated social-media or other third-party services, where you voluntarily connect such services and the relevant service permits the information to be shared.",
+              "Information from payment, verification, fraud-prevention, analytics, hosting, communications or other service providers engaged to support the Platform."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "4. How We Use Personal Data",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We process personal data for purposes connected with operating, securing and improving the Platform, including:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "creating and administering user accounts and profiles;",
+              "facilitating discovery and matching between brands and creators;",
+              "publishing and managing campaigns and applications;",
+              "enabling communications and exchange of campaign materials;",
+              "processing, reconciling or facilitating payments and payouts, where enabled;",
+              "operating Connects, credits or other Platform functionality;",
+              "verifying accounts and preventing fraud, abuse, spam and unauthorised activity;",
+              "providing customer support and responding to requests, complaints and grievances;",
+              "maintaining security, logs, backups and technical integrity;",
+              "analysing Platform usage and improving features, recommendations and user experience;",
+              "complying with applicable law, lawful governmental requests, court orders and regulatory requirements;",
+              "protecting the rights, property, safety and security of users, the Company and others; and",
+              "carrying out corporate transactions, restructuring or business continuity activities, where applicable."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "5. Matching, Search and Automated Recommendations",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tazmify may use automated rules, algorithms or recommendation technologies to help users discover relevant campaigns or creators. Matching may take account of information such as niche/category, audience or engagement information, location/proximity, campaign requirements, budget, profile information and Platform activity."
+          },
+          {
+            "type": "p",
+            "text": "These tools are intended to support discovery and do not by themselves create a legal obligation for a user to engage with another user. Where applicable law requires additional notice, consent or safeguards for automated processing, Tazmify will provide the required information and controls."
+          }
+        ]
+      },
+      {
+        "heading": "6. Location Information",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Where a location-enabled feature is used, Tazmify may process approximate or precise location information, depending on the permission granted and the technical implementation of the feature. Location may be used to show nearby creators or campaigns, determine geographic relevance, support matching and improve location-based discovery."
+          },
+          {
+            "type": "p",
+            "text": "Location access should be requested only when the relevant Platform feature requires it. Users may manage location permissions through their device settings, subject to the effect that disabling the permission may have on location-dependent features."
+          }
+        ]
+      },
+      {
+        "heading": "7. Social-media and Third-party Integrations",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If you connect a social-media account or another third-party service to Tazmify, we may receive information that the third party makes available to us under your authorisation and its applicable terms. The information received may be used to populate or verify profile information, display permitted portfolio or audience information, support campaign matching or provide the connected feature."
+          },
+          {
+            "type": "p",
+            "text": "Tazmify does not obtain more information from a connected service than is reasonably required for the relevant feature. Your use of the third-party service remains subject to that provider’s own privacy policy and terms."
+          }
+        ]
+      },
+      {
+        "heading": "8. User Content and Communications",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tazmify may process content that you voluntarily upload, transmit or publish through the Platform, including photographs, videos, documents, campaign briefs, messages, reviews and other materials. Such content may be made visible to other users where the functionality of the Platform permits it."
+          },
+          {
+            "type": "p",
+            "text": "Users should not upload personal data belonging to another person unless they are authorised to do so and have an appropriate lawful basis or permission."
+          }
+        ]
+      },
+      {
+        "heading": "9. How We Share Personal Data",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We do not sell personal data as a standalone commercial product. We may disclose or make personal data available where reasonably necessary for the purposes described in this Policy, including to the following categories of recipients:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Other Tazmify users, where information is intended to form part of a public or user-to-user profile, campaign, application, review, communication or collaboration.",
+              "Service providers and processors supporting hosting, cloud infrastructure, databases, security, analytics, communications, customer support, verification, payment processing, payouts and other Platform operations.",
+              "Payment and financial-service providers, where required to process or facilitate a transaction or payout.",
+              "Social-media or other integrated service providers, where you choose to use an integration.",
+              "Professional advisers, auditors, insurers and other advisers where reasonably necessary for legitimate business, legal or compliance purposes.",
+              "Government authorities, courts, regulators, law-enforcement bodies or other persons where disclosure is required or permitted by applicable law or necessary to protect rights, safety or security.",
+              "Successors or counterparties in connection with a merger, acquisition, financing, restructuring, sale of assets or similar corporate transaction, subject to applicable law."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Third-party service providers are expected to process personal data only for authorised purposes and subject to appropriate contractual, technical or organisational safeguards, as applicable."
+          }
+        ]
+      },
+      {
+        "heading": "10. Payments and Payouts",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Where Tazmify enables campaign payments, creator payouts, Connects, premium campaigns or related transactions, transaction information may be processed by Tazmify and/or third-party payment or financial-service providers. The specific payment method, provider, fees, settlement process, refund rules and transaction terms may be governed by the applicable payment or commercial terms presented at the time of the transaction."
+          },
+          {
+            "type": "p",
+            "text": "Tazmify will not request or retain payment-card credentials beyond what is reasonably necessary for the relevant transaction and lawful operational purposes, subject to the technical configuration of the payment service used."
+          }
+        ]
+      },
+      {
+        "heading": "11. Legal Basis and Consent",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tazmify processes personal data only for specified and lawful purposes and in accordance with applicable law. Depending on the processing activity, the applicable legal basis may include your consent, performance or facilitation of a service requested by you, compliance with a legal obligation, protection of rights or security, or another ground permitted by applicable law."
+          },
+          {
+            "type": "p",
+            "text": "Where processing is based on consent, you may withdraw consent through the available Platform controls or by contacting us, subject to legal and operational limitations. Withdrawal of consent will not affect processing that has already lawfully occurred before withdrawal and may affect the availability of the relevant feature."
+          },
+          {
+            "type": "p",
+            "text": "The Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025 have been brought into force in phases. Tazmify will implement the statutory requirements from their respective effective dates and will update its notices and processes as required."
+          }
+        ]
+      },
+      {
+        "heading": "12. Data Retention",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We retain personal data only for as long as reasonably necessary for the purposes for which it was collected, to provide the Platform, maintain business and transaction records, resolve disputes, enforce agreements, prevent fraud or abuse, maintain security, comply with legal obligations and establish, exercise or defend legal claims."
+          },
+          {
+            "type": "p",
+            "text": "When personal data is no longer required for a lawful purpose, we will delete it, anonymise it or otherwise dispose of it in accordance with applicable law and our retention procedures. Some information may need to be retained for a longer period where required by law or where reasonably necessary for legal claims, fraud prevention, security or accounting purposes."
+          },
+          {
+            "type": "p",
+            "text": "Backups and system logs may persist for a limited period after deletion in accordance with backup, disaster-recovery and security procedures, after which they are deleted or overwritten in the ordinary course."
+          }
+        ]
+      },
+      {
+        "heading": "13. Account and Data Deletion",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users may request deletion of their Tazmify account and associated personal data through the account-deletion functionality made available in the Platform or through the Tazmify data-deletion page: https://www.tazmify.com/data-deletion."
+          },
+          {
+            "type": "p",
+            "text": "Deletion may be subject to lawful retention requirements, unresolved transactions, fraud-prevention requirements, legal claims, security requirements or other circumstances where applicable law permits or requires continued retention. Where retention is required, the retained information will be limited to what is necessary for that purpose and will not be retained longer than required."
+          },
+          {
+            "type": "p",
+            "text": "Where Google Play account-deletion requirements apply, Tazmify will maintain an accessible deletion mechanism and the relevant Play Console declarations consistently with this Policy."
+          }
+        ]
+      },
+      {
+        "heading": "14. Security",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We use reasonable technical, organisational and administrative safeguards designed to protect personal data against unauthorised access, loss, misuse, alteration or disclosure. Measures may include access controls, authentication, encryption where technically appropriate, secure development and hosting practices, monitoring, backups and incident-response procedures."
+          },
+          {
+            "type": "p",
+            "text": "No electronic system can be guaranteed to be completely secure. Users are responsible for maintaining the confidentiality of their credentials and for promptly reporting suspected unauthorised access or security incidents."
+          },
+          {
+            "type": "p",
+            "text": "The precise security controls used by Tazmify may change as the Platform develops. This Policy does not constitute a representation that every category of data is encrypted at rest or in every system unless specifically stated by Tazmify."
+          }
+        ]
+      },
+      {
+        "heading": "15. Personal Data Breaches",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If a personal data breach occurs, Tazmify will assess and respond to the incident in accordance with applicable law and its incident-response procedures. Where notification to affected individuals, the Data Protection Board of India, or another authority is required, Tazmify will provide such notification within the applicable statutory framework."
+          }
+        ]
+      },
+      {
+        "heading": "16. Children",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Tazmify is intended for persons who are legally capable of entering into the relevant user relationship and is not intended to knowingly collect personal data from children. We do not knowingly solicit accounts from persons under 18 years of age."
+          },
+          {
+            "type": "p",
+            "text": "If we become aware that personal data of a child has been collected contrary to applicable law, we will take reasonable steps to address the situation, including deletion where required, subject to legal obligations."
+          }
+        ]
+      },
+      {
+        "heading": "17. International Processing and Cross-border Transfers",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Depending on the infrastructure and service providers used by Tazmify, personal data may be processed or stored in India or another jurisdiction. Where personal data is transferred outside India, Tazmify will do so in accordance with applicable law and any restrictions, contractual safeguards or government requirements that apply to the relevant transfer."
+          },
+          {
+            "type": "p",
+            "text": "Users should understand that data protection requirements may differ between jurisdictions. Tazmify will maintain appropriate contractual and organisational safeguards with relevant service providers, where required."
+          }
+        ]
+      },
+      {
+        "heading": "18. Cookies and Analytics",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The website and Platform may use cookies, SDKs and similar technologies for authentication, security, preferences, analytics, performance measurement and feature functionality. Where required by law, consent or user controls will be provided for non-essential technologies."
+          },
+          {
+            "type": "p",
+            "text": "Third-party analytics or SDK providers may independently process technical or usage information in accordance with their own policies and the permissions or configuration applicable to the Platform."
+          }
+        ]
+      },
+      {
+        "heading": "19. Your Privacy Rights",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Subject to applicable law and its effective dates, users may have rights including:"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "to obtain information about the personal data processed about them;",
+              "to request correction, completion or updating of inaccurate or incomplete personal data;",
+              "to request erasure where retention is no longer necessary or where the law provides such a right;",
+              "to withdraw consent where processing is based on consent;",
+              "to raise a grievance concerning processing of personal data;",
+              "to nominate another individual to exercise rights in accordance with applicable law; and",
+              "to exercise any additional rights made available by applicable law."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "To exercise a privacy right, please contact contact@tazmify.com. We may request reasonable information to verify the identity of the requester before acting on a request."
+          }
+        ]
+      },
+      {
+        "heading": "20. Grievance Redressal",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Questions, complaints or grievances concerning personal data or this Policy may be submitted to contact@tazmify.com. We will review and address complaints in accordance with applicable law and our internal grievance procedures."
+          },
+          {
+            "type": "p",
+            "text": "If a statutory grievance mechanism, Data Protection Officer or other designated contact becomes applicable to Tazmify, the relevant details will be published or otherwise communicated as required by law."
+          }
+        ]
+      },
+      {
+        "heading": "21. Third-party Links and Services",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Platform may contain links to or integrations with third-party websites, applications, social networks, payment services or other services. Tazmify is not responsible for the privacy practices of independent third parties. Users should review the privacy notices of those services before providing information to them."
+          }
+        ]
+      },
+      {
+        "heading": "22. Changes to This Privacy Policy",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "We may update this Policy to reflect changes in the Platform, technology, service providers, applicable law or our data practices. The updated version will be published on the Tazmify website and, where appropriate, communicated through the Platform. The “Last Updated” date at the beginning of this Policy will identify the latest version."
+          }
+        ]
+      },
+      {
+        "heading": "23. Governing Law",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This Policy is governed by the laws of India, subject to any mandatory rights or protections that apply to a user under applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "24. Contact Details",
+        "blocks": [
+          {
+            "type": "ul",
+            "items": [
+              "Company: Hiranyasaga Techsolutions Private Limited",
+              "Platform: Tazmify",
+              "Registered/Business Address: Building No. Ep-9/198, Eranholi, Kannur Thalassery, Kerala 670107, India",
+              "Privacy / Grievance Contact: contact@tazmify.com",
+              "Website: https://www.tazmify.com/",
+              "The drafting has been structured with reference to the Digital Personal Data Protection Act, 2023; the Digital Personal Data Protection Rules, 2025; the Information Technology Act, 2000 and applicable rules; the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 where applicable; the Consumer Protection Act, 2019 and Consumer Protection (E-Commerce) Rules, 2020 where applicable; and current Google Play User Data and privacy-policy requirements.: The statutory framework is subject to phased commencement and future amendments."
+            ]
+          }
+        ]
+      }
+    ],
+    "updated": "Effective Date: 27 September 2026 · Last Updated: 27 September 2026"
+  },
+  "terms": {
+    "intro": [
+      "These Terms & Conditions (“Terms”) govern your access to and use of the TAZMIFY website, mobile application, platform and related services (collectively, the “Platform”). The Platform is operated by Hiranyasaga Techsolutions Private Limited, operating under the brand name “TAZMIFY” (“TAZMIFY”, “Company”, “we”, “us” or “our”).",
+      "By accessing, registering on, or using the Platform, you acknowledge that you have read, understood and agreed to be bound by these Terms, together with the Privacy Policy and any other policies expressly incorporated into these Terms. If you do not agree with these Terms, you must not access or use the Platform."
+    ],
+    "sections": [
+      {
+        "heading": "1. About TAZMIFY",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY is a technology-enabled platform designed to facilitate connections between brands and influencers, creators and other users. TAZMIFY enables users to create profiles, subject to verification by TAZMIFY, discover other users or brands, and communicate with one another through the Platform."
+          },
+          {
+            "type": "p",
+            "text": "TAZMIFY is a facilitation and networking platform. TAZMIFY is not a party to, and does not become a party to, any commercial, professional, advertising, endorsement, collaboration or other arrangement subsequently entered into between users."
+          },
+          {
+            "type": "p",
+            "text": "Any agreement, understanding, transaction, engagement, collaboration, endorsement or other arrangement between a brand and an influencer/user is entered into solely between those parties."
+          }
+        ]
+      },
+      {
+        "heading": "2. Eligibility and Contractual Capacity",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Platform may be used by individuals, brands, businesses, organisations, creators, influencers and other eligible users, subject to verification and compliance with these Terms."
+          },
+          {
+            "type": "p",
+            "text": "TAZMIFY does not prescribe a minimum follower count, engagement level, category, profession or other eligibility criterion for influencers or creators at present. Users must nevertheless have the legal capacity required under applicable Indian law to enter into binding contractual arrangements. Where a person does not have such legal capacity, access to features involving contractual commitments, subscriptions or other legally binding transactions may be restricted or may require participation or consent of a legally competent person, as applicable."
+          }
+        ]
+      },
+      {
+        "heading": "3. Account Registration",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users must provide accurate, complete and current information; provide information reasonably required for verification; maintain accurate profile information; keep credentials secure; not impersonate another person or entity; not create accounts using false or misleading information; and promptly update inaccurate information. Users are responsible for activities conducted through their accounts, subject to applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "4. Verification and KYC",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY may conduct identity, business, profile and other verification or KYC checks before approving or continuing an account. Verification may include identity, contact, social-media, business, professional or other checks considered reasonably necessary by TAZMIFY."
+          },
+          {
+            "type": "p",
+            "text": "A “verified” status means only that TAZMIFY has completed its verification process based on the information and checks considered appropriate by TAZMIFY. Verification does not constitute a guarantee of a user's character, conduct, financial capacity, complete accuracy, follower count, engagement, future performance, recommendation, endorsement, performance of obligations, or success of any relationship or transaction."
+          },
+          {
+            "type": "p",
+            "text": "TAZMIFY may refuse, suspend, withdraw or modify verification where information is incomplete, inaccurate, misleading, fraudulent or inconsistent with Platform requirements."
+          }
+        ]
+      },
+      {
+        "heading": "5. User Profiles",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users may create profiles containing information such as name, photograph, biography, professional information, social-media information, areas of interest, portfolio information, brand information and other information permitted by the Platform. Users are solely responsible for the accuracy and legality of their profile information. TAZMIFY may review, modify, restrict, remove or request correction of information that violates these Terms or applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "6. Brand and Influencer Connections",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Platform enables brands and influencers/creators to discover and connect with one another. Brands may contact, message or otherwise communicate with influencers/users through features made available by TAZMIFY, and influencers/users may communicate with brands. TAZMIFY does not guarantee responses, connections, commercial relationships, outcomes, income, reach, engagement, business or continued availability of any user."
+          }
+        ]
+      },
+      {
+        "heading": "7. User-to-User Relationships and Transactions",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY facilitates introductions and communication between users. Any subsequent relationship, negotiation, meeting, collaboration, engagement, endorsement arrangement, advertising arrangement, payment, service arrangement or contract between users is solely between the relevant users."
+          },
+          {
+            "type": "p",
+            "text": "TAZMIFY is not a party to such arrangements and does not assume responsibility for negotiations, agreed terms, performance, quality or legality of services/content, payment or non-payment, breach of contract, user representations, disputes, or losses arising from a user-to-user arrangement. Users are responsible for conducting their own due diligence before entering into an arrangement with another user."
+          }
+        ]
+      },
+      {
+        "heading": "8. No Agency, Partnership or Employment Relationship",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Use of TAZMIFY does not create any relationship of agency, partnership, joint venture, employment, franchise or fiduciary relationship between TAZMIFY and any user, or between TAZMIFY and any brand/influencer. A user's presence on the Platform does not mean that the user is an employee, agent or representative of TAZMIFY."
+          }
+        ]
+      },
+      {
+        "heading": "9. User Communications",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users must use messaging and communication features lawfully and responsibly. Users must not harass, threaten or intimidate; send unlawful, abusive or defamatory communications; impersonate others; distribute fraudulent or misleading information; send prohibited communications; solicit users for unlawful activities; distribute malware; unlawfully obtain confidential information; engage in fraud or scams; or otherwise misuse the Platform. TAZMIFY may take reasonable measures to investigate, restrict or suspend accounts for violations of these Terms or applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "10. User Content",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users may submit, upload, display or otherwise make available photographs, videos, text, biographies, portfolio material, social-media information and other materials (“User Content”). Users retain ownership of their User Content, subject to rights granted under these Terms."
+          },
+          {
+            "type": "p",
+            "text": "By submitting User Content, you grant TAZMIFY a non-exclusive, worldwide, royalty-free licence to host, store, reproduce, display, communicate, format, adapt and otherwise use such User Content solely to the extent reasonably necessary to operate, maintain, improve, promote and provide the Platform and its services. Users represent that they own or have sufficient rights to submit the User Content, that it does not unlawfully infringe third-party rights, is not knowingly false or misleading, and that submission does not violate an agreement or applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "11. Intellectual Property",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Platform, including software, design, branding, trademarks, logos, text, graphics, interfaces, databases, features and other materials provided by TAZMIFY, is owned by or licensed to TAZMIFY and protected by applicable intellectual-property laws. Users must not copy, reproduce, modify, commercially exploit, reverse engineer, scrape, systematically collect Platform information, use TAZMIFY trademarks without permission, or interfere with Platform operation."
+          }
+        ]
+      },
+      {
+        "heading": "12. Prohibited Activities",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users must not use the Platform for fraud, impersonation, identity theft, harassment, unlawful solicitation, deceptive commercial practices, malicious software, unauthorised access, scraping or automated data extraction, manipulation of verification information, fake or misleading profiles, unlawful or infringing material, activities prohibited by law, or activities that may harm TAZMIFY, its users or Platform integrity."
+          }
+        ]
+      },
+      {
+        "heading": "13. Verification Does Not Eliminate User Responsibility",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY's verification process is intended to improve trust and Platform integrity. Users must independently assess the suitability and credibility of another user before entering into any relationship, meeting, collaboration, transaction or contract. Users should not rely solely upon a verification status when making commercial or personal decisions."
+          }
+        ]
+      },
+      {
+        "heading": "14. User Safety",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users are responsible for exercising reasonable caution when communicating with or meeting other users. TAZMIFY does not guarantee the conduct, identity, intentions or future actions of any user beyond the scope of its verification process. Users should avoid sharing unnecessary sensitive or confidential information and should take appropriate precautions when meeting another person offline. Unlawful, threatening, fraudulent or abusive conduct should be reported to TAZMIFY and, where appropriate, to relevant law-enforcement authorities."
+          }
+        ]
+      },
+      {
+        "heading": "15. Subscriptions and Fees",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY may provide certain Platform features on a subscription basis. Applicable subscription fees, periods, features and other commercial terms will be displayed before subscription. Subscription fees must be paid in accordance with applicable terms; access to subscription features may cease upon expiry or termination; subscription terms may differ between plans; and TAZMIFY may introduce, modify or discontinue plans subject to applicable law. Any applicable refund, cancellation or renewal terms will be communicated at subscription."
+          }
+        ]
+      },
+      {
+        "heading": "16. Third-Party Services and Links",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The Platform may contain links to third-party websites, social-media platforms, services or applications. TAZMIFY does not control third-party services and is not responsible for their content, availability, policies, security or practices. Users should review applicable third-party terms and privacy policies."
+          }
+        ]
+      },
+      {
+        "heading": "17. Privacy and Personal Data",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY may collect and process personal data necessary to provide, secure, verify and improve its services. Personal data will be processed in accordance with applicable Indian data-protection and privacy laws and TAZMIFY's Privacy Policy."
+          },
+          {
+            "type": "p",
+            "text": "Where applicable, users may exercise rights available under law, including rights relating to access, correction, withdrawal of consent, grievance redressal and erasure/deletion of personal data. Personal data will be retained only for as long as necessary for the purposes for which it was collected or as required or permitted by applicable law."
+          },
+          {
+            "type": "p",
+            "text": "Where a user requests deletion of an account or personal data, TAZMIFY will process the request in accordance with applicable law, subject to lawful retention requirements, including requirements relating to legal claims, fraud prevention, security, regulatory compliance, accounting or other legally permissible purposes. Nothing in these Terms limits any statutory right available to a Data Principal under applicable data-protection law."
+          }
+        ]
+      },
+      {
+        "heading": "18. Account Suspension and Termination",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY may suspend, restrict or terminate an account where the user violates these Terms; provides materially false or misleading information; fails verification requirements; engages in fraudulent or unlawful conduct; abuses or misuses the Platform; suspension is reasonably necessary to protect users or the Platform; or action is required by law or lawful governmental direction. Where reasonably practicable and legally permissible, TAZMIFY may provide notice or an opportunity to address the issue."
+          }
+        ]
+      },
+      {
+        "heading": "19. Consequences of Termination",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Upon termination or suspension, the user's right to access relevant Platform features may cease. Provisions relating to intellectual property, user responsibility, disclaimers, limitation of liability, indemnity, dispute resolution and other provisions intended by their nature to survive termination shall continue to apply."
+          }
+        ]
+      },
+      {
+        "heading": "20. Disclaimer of Warranties",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "To the maximum extent permitted by applicable law, the Platform is provided on an “as available” and “as is” basis. TAZMIFY does not warrant uninterrupted or error-free availability, continuous accuracy of user information, continued accuracy after verification, commercial relationships, user performance, fitness for every requirement, or any particular business, financial or commercial result. Nothing excludes liability that cannot lawfully be excluded."
+          }
+        ]
+      },
+      {
+        "heading": "21. Limitation of Liability",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "To the maximum extent permitted by applicable law, TAZMIFY shall not be liable for indirect, incidental, special, consequential or punitive losses arising from interactions between users, contracts or arrangements between users, acts or omissions of users, non-payment or non-performance, User Content, third-party services, or circumstances beyond TAZMIFY's reasonable control. Nothing excludes or limits liability to the extent prohibited by applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "22. Indemnification",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "To the extent permitted by applicable law, users agree to indemnify and hold harmless TAZMIFY, Hiranyasaga Techsolutions Private Limited and their directors, officers, employees and representatives from claims, losses, liabilities, damages, costs and expenses arising from breach of these Terms, unlawful conduct, User Content, violation of third-party rights, user interactions or arrangements, or violation of applicable law."
+          }
+        ]
+      },
+      {
+        "heading": "23. Compliance with Law",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users must comply with all applicable laws, rules, regulations and governmental directions while using the Platform. Where applicable, users remain responsible for obligations relating to advertising, endorsements, taxation, intellectual property, contracts, consumer protection, employment, professional regulation and other legal requirements arising from their activities."
+          }
+        ]
+      },
+      {
+        "heading": "24. Grievances and Reporting",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Users may report suspected violations, abusive behaviour, fraudulent profiles, impersonation, unlawful content or other concerns through the grievance/reporting mechanism made available by TAZMIFY. TAZMIFY will process grievances in accordance with applicable law and applicable policies and will publish required grievance-redressal details where applicable."
+          }
+        ]
+      },
+      {
+        "heading": "25. Changes to These Terms",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "TAZMIFY may amend these Terms from time to time to reflect changes in the Platform, business model, technology, law or regulatory requirements. Updated Terms will be made available through the Platform. Where required by law, TAZMIFY will provide additional notice or obtain required consent. Continued use after effectiveness constitutes acceptance to the extent permitted by law."
+          }
+        ]
+      },
+      {
+        "heading": "26. Governing Law and Jurisdiction",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "These Terms shall be governed by and interpreted in accordance with the laws of India. Subject to mandatory statutory dispute-resolution mechanisms or jurisdictional rules, courts having competent jurisdiction in India shall have jurisdiction over disputes arising from or relating to these Terms."
+          }
+        ]
+      },
+      {
+        "heading": "27. Severability",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If any provision is held invalid, unlawful or unenforceable, it shall be modified or severed to the minimum extent necessary, and the remaining provisions shall continue in force."
+          }
+        ]
+      },
+      {
+        "heading": "28. Entire Agreement",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "These Terms, together with the Privacy Policy and other policies expressly incorporated by reference, constitute the agreement concerning use of the Platform, subject to any separate written agreement expressly entered into between TAZMIFY and a user."
+          }
+        ]
+      },
+      {
+        "heading": "29. Contact",
+        "blocks": [
+          {
+            "type": "ul",
+            "items": [
+              "Company: Hiranyasaga Techsolutions Private Limited",
+              "Brand: TAZMIFY",
+              "Email: contact@tazmify.com",
+              "Registered Office: Building No. Ep-9/198, Eranholi, Kannur Thalassery, Kerala 670107, India",
+              "Grievance Contact: contact@tazmify.com"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "By creating an account or using the Platform, you acknowledge that you have read and agreed to these Terms & Conditions."
+          }
+        ]
+      }
+    ],
+    "updated": "Effective Date: 6 October 2026 · Last Updated: 6 October 2026"
+  }
+}

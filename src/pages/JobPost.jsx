@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Briefcase, Clock, MapPin, Wallet } from 'lucide-react';
 import PageHero from '../sections/PageHero.jsx';
 import Download from '../sections/Download.jsx';
 import { BackButton } from '../sections/BlogSections.jsx';
 import { ProseSection } from '../sections/Prose.jsx';
-import { findJob } from '../data/jobs.js';
+import { applyEmail, applyPhone, findJob } from '../data/jobs.js';
 import NotFound from './NotFound.jsx';
 
 export default function JobPost() {
@@ -43,12 +43,22 @@ export default function JobPost() {
                   <strong>{value}</strong>
                 </div>
               ))}
+              {job.closes && (
+                <p className="job-closes">
+                  Applications close on <b>{job.closes}</b>
+                </p>
+              )}
               <p className="job-closes">
-                Applications close on <b>{job.closes}</b>
+                Email your CV to{' '}
+                <a href={`mailto:${applyEmail}`}>{applyEmail}</a> or call{' '}
+                <a href={`tel:${applyPhone.replace(/s/g, '')}`}>{applyPhone}</a>
               </p>
-              <Link className="apply-btn" to={`/contact?role=${job.slug}`}>
+              <a
+                className="apply-btn"
+                href={`mailto:${applyEmail}?subject=${encodeURIComponent(job.title + ' application')}`}
+              >
                 Apply now
-              </Link>
+              </a>
             </aside>
           </div>
         </article>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHero from '../sections/PageHero.jsx';
 import Download from '../sections/Download.jsx';
-import { ProseSection } from '../sections/Prose.jsx';
+import { ProseSection, linkify } from '../sections/Prose.jsx';
 import { Link } from 'react-router-dom';
 import { legal, supportEmail } from '../data/legal.jsx';
 
@@ -14,7 +14,7 @@ export default function Legal({ kind }) {
         <section className="section narrow">
           <div className="prose">
             {doc.intro.map((p) => (
-              <p key={p}>{p}</p>
+              <p key={p}>{linkify(p)}</p>
             ))}
             <p className="legal-links">
               <Link to="/privacy-policy">Privacy Policy</Link> ·{' '}
