@@ -10,6 +10,7 @@ import {
   useElementSize,
   useIsMobile,
 } from '../motion.jsx';
+import { APP_STORE_URL } from '../config/launch.js';
 
 function XMark() {
   return (
@@ -193,21 +194,39 @@ export default function Download() {
       </div>
 
       <Reveal className="cta-actions" delay={0.3}>
-        <a
-          className="btn btn-store is-soon"
-          href="#download"
-          aria-label="App Store, coming soon"
-          aria-disabled="true"
-          onClick={(e) => e.preventDefault()}
-        >
-          <span>
-            <AppleMark />
-            <span className="store-text">
-              <small>Coming soon on the</small>
-              <strong>App Store</strong>
+        {APP_STORE_URL ? (
+          <a
+            className="btn btn-store"
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Tazmify on the App Store"
+          >
+            <span>
+              <AppleMark />
+              <span className="store-text">
+                <small>Download on the</small>
+                <strong>App Store</strong>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
+        ) : (
+          <a
+            className="btn btn-store is-soon"
+            href="#download"
+            aria-label="App Store, coming soon"
+            aria-disabled="true"
+            onClick={(e) => e.preventDefault()}
+          >
+            <span>
+              <AppleMark />
+              <span className="store-text">
+                <small>Coming soon on the</small>
+                <strong>App Store</strong>
+              </span>
+            </span>
+          </a>
+        )}
         <a
           className="btn btn-store is-soon"
           href="#download"
