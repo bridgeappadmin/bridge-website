@@ -10,7 +10,7 @@ import {
   useElementSize,
   useIsMobile,
 } from '../motion.jsx';
-import { APP_STORE_URL } from '../config/launch.js';
+import { APP_STORE_URL, PLAY_STORE_URL } from '../config/launch.js';
 
 function XMark() {
   return (
@@ -227,21 +227,39 @@ export default function Download() {
             </span>
           </a>
         )}
-        <a
-          className="btn btn-store is-soon"
-          href="#download"
-          aria-label="Google Play, coming soon"
-          aria-disabled="true"
-          onClick={(e) => e.preventDefault()}
-        >
-          <span>
-            <PlayMark />
-            <span className="store-text">
-              <small>Coming soon on</small>
-              <strong>Google Play</strong>
+        {PLAY_STORE_URL ? (
+          <a
+            className="btn btn-store"
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get Tazmify on Google Play"
+          >
+            <span>
+              <PlayMark />
+              <span className="store-text">
+                <small>Get it on</small>
+                <strong>Google Play</strong>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
+        ) : (
+          <a
+            className="btn btn-store is-soon"
+            href="#download"
+            aria-label="Google Play, coming soon"
+            aria-disabled="true"
+            onClick={(e) => e.preventDefault()}
+          >
+            <span>
+              <PlayMark />
+              <span className="store-text">
+                <small>Coming soon on</small>
+                <strong>Google Play</strong>
+              </span>
+            </span>
+          </a>
+        )}
       </Reveal>
     </section>
   );

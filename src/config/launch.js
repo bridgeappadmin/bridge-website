@@ -7,4 +7,4 @@ export const CONNECTS_LIVE = false;
 
 // Store links. Leave a link empty to show that store as "Coming soon".
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/tazmify-app/id6796903582';
-export const PLAY_STORE_URL = '';
+export const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.tazmify.app';
